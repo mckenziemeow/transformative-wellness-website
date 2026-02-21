@@ -1153,6 +1153,24 @@
     -->
     <!-- NOTE: Replace the Tidio script in <head> with your actual Tidio ID from tidio.com -->
 
+    <!-- Prevent Duplicate Google Reviews Widget -->
+    <script>
+    (function() {
+        // Remove duplicate Elfsight widgets if they appear
+        document.addEventListener('DOMContentLoaded', function() {
+            var widgets = document.querySelectorAll('.elfsight-app-24bace57-414f-491c-add5-a2e7d54b2a3b');
+            if (widgets.length > 1) {
+                for (var i = 1; i < widgets.length; i++) {
+                    widgets[i].style.display = 'none';
+                    if (widgets[i].parentNode) {
+                        widgets[i].parentNode.removeChild(widgets[i]);
+                    }
+                }
+            }
+        });
+    })();
+    </script>
+
     <script src="js/main.js"></script>
 </body>
 </html>

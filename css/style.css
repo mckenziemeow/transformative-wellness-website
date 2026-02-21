@@ -3356,6 +3356,26 @@ body.menu-open {
 }
 
 /* ========================================
+   GOOGLE REVIEWS WIDGET - PREVENT DUPLICATES
+   ======================================== */
+
+.google-reviews-widget {
+    position: relative;
+    min-height: 200px;
+}
+
+/* Hide any duplicate widget instances */
+.google-reviews-widget .elfsight-app-24bace57-414f-491c-add5-a2e7d54b2a3b ~ .elfsight-app-24bace57-414f-491c-add5-a2e7d54b2a3b {
+    display: none !important;
+}
+
+/* Ensure widget container doesn't overflow */
+.elfsight-app-24bace57-414f-491c-add5-a2e7d54b2a3b {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* ========================================
    CHAT WIDGET
    ======================================== */
 
