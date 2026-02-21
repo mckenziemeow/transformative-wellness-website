@@ -397,31 +397,80 @@
     <!-- Main Content -->
     <main id="main-content">
     
-    <!-- Hero Section - Desktop -->
-    <section class="hero hero-desktop">
-        <video autoplay muted loop playsinline preload="metadata" poster="images/lobby/lobby-reception-new.jpg">
-            <source src="videos/hero.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
+    <!-- HERO SECTION - UNIFIED FOR MOBILE & DESKTOP -->
+    <section class="hero-video-section" role="banner" aria-label="Welcome to Transformative Wellness">
+        <div class="hero-video-container">
+            <!-- Video Background -->
+            <video 
+                class="hero-video" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                poster="images/lobby/lobby-reception-new.jpg"
+                preload="metadata"
+            >
+                <source src="videos/hero.mp4" type="video/mp4">
+                <!-- Fallback to team image if video fails -->
+                <img src="images/lobby/lobby-reception-new.jpg" alt="Transformative Wellness team in Vista, CA">
+            </video>
+            
+            <!-- Dark Overlay for Text Readability -->
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Content Layer - Centered on Video -->
         <div class="hero-content">
-            <h1 class="hero-title">Look Good.<br>Feel Great.<br><span class="highlight">Live Better.</span></h1>
+            <!-- Trust Badge -->
+            <div class="hero-badge">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="badge-text">Vista's Top Rated Med Spa</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="hero-headline">
+                <span class="line1">Look Good.</span>
+                <span class="line2">Feel Great.</span>
+                <span class="line3 accent">Live Better.</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="hero-subheadline">
+                Natural results from board-certified experts in Vista, CA
+            </p>
+
+            <!-- CTAs -->
             <div class="hero-ctas">
-                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary btn-large">Book Free Consultation</a>
-                <a href="concerns.html" class="btn btn-outline btn-large">Explore Treatments</a>
+                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn-primary-hero">
+                    Book Free Consultation
+                    <span class="btn-note">$150 value</span>
+                </a>
+                <a href="concerns.html" class="btn-secondary-hero">Explore Treatments</a>
+            </div>
+
+            <!-- Trust Stats -->
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4.9★</span>
+                    <span class="stat-label">Google Rating</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Expert Providers</span>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Hero Section - Mobile -->
-    <section class="hero hero-mobile">
-        <div class="hero-mobile-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Look Good.<br>Feel Great.<br><span class="highlight">Live Better.</span></h1>
-            <div class="hero-ctas">
-                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary btn-large">Book Free Consultation</a>
-                <a href="concerns.html" class="btn btn-outline btn-large">Explore Treatments</a>
-            </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="mouse"></div>
+            <span>Scroll</span>
         </div>
     </section>
 
@@ -788,66 +837,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Real Results</span>
-                <h2>What Our Clients Say</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"I've been coming here for 2 years and the results are incredible. The staff is so knowledgeable and caring. My skin has never looked better!"</p>
-                    <div class="testimonial-author">
-                        <span class="name">Sarah M.</span>
-                        <span class="location">Vista, CA</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"The weight loss program changed my life. Down 30 pounds and feeling amazing. The team really cares about your success."</p>
-                    <div class="testimonial-author">
-                        <span class="name">Jennifer K.</span>
-                        <span class="location">Carlsbad, CA</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Finally found a place that understands natural-looking results. My Botox is subtle but effective. Nobody knows I had anything done!"</p>
-                    <div class="testimonial-author">
-                        <span class="name">Michelle T.</span>
-                        <span class="location">Oceanside, CA</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonials-cta">
-                <a href="https://g.co/kgs/placeholder" target="_blank" class="btn btn-outline">
-                    <i class="fab fa-google"></i> Read More Reviews on Google
-                </a>
-            </div>
-            <p class="testimonials-disclaimer" style="text-align: center; margin-top: var(--spacing-lg); font-size: 0.875rem; color: var(--color-text-muted);"><i class="fas fa-info-circle"></i> Individual results may vary. Testimonials represent personal experiences and may not reflect typical outcomes.</p>
         </div>
     </section>
 
