@@ -351,14 +351,22 @@ body.menu-open {
 }
 
 /* ============================================
-   HERO SECTION - VIDEO WITH TEXT OVERLAY
+   HERO - FINAL POLISHED VERSION
    ============================================ */
+
+/* Prevent horizontal scroll on entire page */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
 
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 600px;
+  min-height: 700px;
+  max-height: 900px;
   overflow: hidden;
 }
 
@@ -372,137 +380,240 @@ body.menu-open {
   z-index: 1;
 }
 
-/* Video styling */
+/* Video - positioned to show faces */
 .hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 25%; /* Moves video up to show faces */
+  object-position: center 15%; /* Shows faces, not stomachs */
 }
 
-/* Dark overlay */
+/* Dark overlay - gradient for text readability */
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Darkens video so white text shows */
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.1) 30%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   z-index: 2;
 }
 
-/* Content positioned over video */
+/* Content - positioned at bottom to not block faces */
 .hero-content {
-  position: relative;
-  z-index: 3; /* Above overlay */
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0 24px 80px 24px; /* Bottom padding for breathing room */
   text-align: center;
   color: white;
-  padding: 0 20px;
+  
+  /* Flex to push content to bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
 }
 
-/* Badge */
-.hero-badge {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 8px 16px;
-  border-radius: 50px;
-  margin-bottom: 20px;
+/* Rating badge - minimal, elegant */
+.hero-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hero-rating .stars {
+  color: #fbbc05;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-right: 8px;
+}
+
+.hero-rating .rating-number {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.hero-rating .rating-divider {
+  font-size: 20px;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+.hero-rating .rating-total {
+  font-size: 20px;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.hero-rating .rating-source {
   font-size: 14px;
-  backdrop-filter: blur(10px);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  margin-left: 8px;
+  font-weight: 500;
 }
 
-/* Title */
+/* Title - elegant typography */
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 5rem);
-  line-height: 1.1;
-  margin-bottom: 20px;
+  margin: 0 0 16px 0;
+  font-family: 'Playfair Display', Georgia, serif;
   font-weight: 400;
+  line-height: 1.05;
+}
+
+.hero-title .line {
+  display: block;
+  font-size: clamp(2.5rem, 7vw, 5rem);
 }
 
 .hero-title .accent {
-  color: #c9a961; /* Gold color */
+  color: #c9a961;
   font-style: italic;
 }
 
 /* Subtitle */
 .hero-subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   opacity: 0.9;
+  margin-bottom: 32px;
+  max-width: 500px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* Buttons */
 .hero-buttons {
   display: flex;
-  gap: 15px;
+  gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .hero-buttons .btn {
-  padding: 15px 30px;
+  padding: 16px 32px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 500;
-  transition: all 0.3s;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
 }
 
 .hero-buttons .btn-primary {
   background: #1a1a1a;
   color: white;
+  border: 2px solid #1a1a1a;
 }
 
 .hero-buttons .btn-primary:hover {
-  background: #333;
+  background: transparent;
+  transform: translateY(-2px);
+}
+
+.hero-buttons .btn-note {
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 400;
+  margin-top: 2px;
 }
 
 .hero-buttons .btn-secondary {
   background: transparent;
   color: white;
-  border: 2px solid white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .hero-buttons .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
+  border-color: white;
 }
 
-.hero-buttons .btn small {
-  display: block;
-  font-size: 0.75rem;
-  opacity: 0.8;
-  font-weight: 400;
-}
+/* ============================================
+   MOBILE FIXES - NO HORIZONTAL SCROLL
+   ============================================ */
 
-/* MOBILE FIXES */
 @media (max-width: 768px) {
   .hero {
-    height: 90vh;
+    min-height: 600px;
+    max-height: 100vh;
   }
   
+  /* Video positioned higher on mobile to show faces */
   .hero-video {
-    object-position: center 20%; /* Show faces on mobile */
+    object-position: center 10%;
   }
   
+  /* Content lower on mobile */
+  .hero-content {
+    padding: 0 20px 60px 20px;
+  }
+  
+  /* Smaller rating on mobile */
+  .hero-rating .rating-number {
+    font-size: 24px;
+  }
+  
+  .hero-rating .rating-total {
+    font-size: 18px;
+  }
+  
+  .hero-rating .rating-source {
+    font-size: 12px;
+  }
+  
+  /* Stack buttons on mobile */
   .hero-buttons {
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
   }
   
   .hero-buttons .btn {
     width: 100%;
-    text-align: center;
+    min-width: unset;
+  }
+  
+  /* Ensure no overflow */
+  .hero-title .line {
+    font-size: clamp(2rem, 10vw, 3rem);
   }
 }
 
-/* Prevent horizontal scroll */
-html, body {
-    overflow-x: hidden;
-    width: 100%;
+/* ============================================
+   SAFARI / IOS FIXES
+   ============================================ */
+
+/* Fix iOS video scaling */
+@supports (-webkit-touch-callout: none) {
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}
+
+/* Prevent momentum scrolling issues */
+.hero {
+  -webkit-overflow-scrolling: touch;
 }
 
 .hero-badge {

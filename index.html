@@ -397,10 +397,9 @@
     <!-- Main Content -->
     <main id="main-content">
     
-    <!-- HERO SECTION - VIDEO WITH TEXT OVERLAY -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-video-wrapper">
-            <!-- Video -->
             <video 
                 class="hero-video" 
                 autoplay 
@@ -411,28 +410,35 @@
             >
                 <source src="videos/hero.mp4" type="video/mp4">
             </video>
-            
-            <!-- Dark overlay for text readability -->
             <div class="hero-overlay"></div>
         </div>
 
-        <!-- Text content - positioned over video -->
         <div class="hero-content">
-            <div class="hero-badge">
-                <span>⭐⭐⭐⭐⭐</span>
-                <span>Vista's Top Rated Med Spa</span>
+            <!-- Top badge - minimal, elegant -->
+            <div class="hero-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-number">4.9</span>
+                <span class="rating-divider">/</span>
+                <span class="rating-total">5</span>
+                <span class="rating-source">Google</span>
             </div>
-            
+
+            <!-- Headline - positioned lower -->
             <h1 class="hero-title">
-                Look Good.<br>
-                Feel Great.<br>
-                <span class="accent">Live Better.</span>
+                <span class="line">Look Good.</span>
+                <span class="line">Feel Great.</span>
+                <span class="line accent">Live Better.</span>
             </h1>
-            
+
+            <!-- Subtitle -->
             <p class="hero-subtitle">Natural results from board-certified experts in Vista, CA</p>
-            
+
+            <!-- CTAs -->
             <div class="hero-buttons">
-                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary">Book Free Consultation <small>$150 value</small></a>
+                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary">
+                    Book Free Consultation
+                    <span class="btn-note">$150 value</span>
+                </a>
                 <a href="concerns.html" class="btn btn-secondary">Explore Treatments</a>
             </div>
         </div>
