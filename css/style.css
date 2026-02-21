@@ -388,10 +388,30 @@ body.menu-open {
     z-index: 1;
 }
 
-/* Mobile hero height */
+/* Mobile hero - use static image for better performance and appearance */
 @media (max-width: 768px) {
     .hero {
-        height: 55vh;
+        height: auto;
+        min-height: 85vh;
+        background: url('../images/lobby/lobby-reception-new.jpg') center center / cover no-repeat;
+    }
+    
+    .hero video {
+        display: none; /* Hide video on mobile, use background image instead */
+    }
+    
+    .hero-content {
+        padding: calc(100px + var(--spacing-xl)) var(--spacing-md) var(--spacing-xl);
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 2.75rem);
+        line-height: 1.15;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
     }
 }
 
