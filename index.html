@@ -397,10 +397,10 @@
     <!-- Main Content -->
     <main id="main-content">
     
-    <!-- HERO SECTION - UNIFIED FOR MOBILE & DESKTOP -->
-    <section class="hero-video-section" role="banner" aria-label="Welcome to Transformative Wellness">
-        <div class="hero-video-container">
-            <!-- Video Background -->
+    <!-- HERO SECTION - VIDEO WITH TEXT OVERLAY -->
+    <section class="hero">
+        <div class="hero-video-wrapper">
+            <!-- Video -->
             <video 
                 class="hero-video" 
                 autoplay 
@@ -408,69 +408,33 @@
                 loop 
                 playsinline
                 poster="images/lobby/lobby-reception-new.jpg"
-                preload="metadata"
             >
                 <source src="videos/hero.mp4" type="video/mp4">
-                <!-- Fallback to team image if video fails -->
-                <img src="images/lobby/lobby-reception-new.jpg" alt="Transformative Wellness team in Vista, CA">
             </video>
             
-            <!-- Dark Overlay for Text Readability -->
+            <!-- Dark overlay for text readability -->
             <div class="hero-overlay"></div>
         </div>
 
-        <!-- Content Layer - Centered on Video -->
+        <!-- Text content - positioned over video -->
         <div class="hero-content">
-            <!-- Trust Badge -->
             <div class="hero-badge">
-                <span class="stars">⭐⭐⭐⭐⭐</span>
-                <span class="badge-text">Vista's Top Rated Med Spa</span>
+                <span>⭐⭐⭐⭐⭐</span>
+                <span>Vista's Top Rated Med Spa</span>
             </div>
-
-            <!-- Main Headline -->
-            <h1 class="hero-headline">
-                <span class="line1">Look Good.</span>
-                <span class="line2">Feel Great.</span>
-                <span class="line3 accent">Live Better.</span>
+            
+            <h1 class="hero-title">
+                Look Good.<br>
+                Feel Great.<br>
+                <span class="accent">Live Better.</span>
             </h1>
-
-            <!-- Subheadline -->
-            <p class="hero-subheadline">
-                Natural results from board-certified experts in Vista, CA
-            </p>
-
-            <!-- CTAs -->
-            <div class="hero-ctas">
-                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn-primary-hero">
-                    Book Free Consultation
-                    <span class="btn-note">$150 value</span>
-                </a>
-                <a href="concerns.html" class="btn-secondary-hero">Explore Treatments</a>
+            
+            <p class="hero-subtitle">Natural results from board-certified experts in Vista, CA</p>
+            
+            <div class="hero-buttons">
+                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary">Book Free Consultation <small>$150 value</small></a>
+                <a href="concerns.html" class="btn btn-secondary">Explore Treatments</a>
             </div>
-
-            <!-- Trust Stats -->
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">4.9★</span>
-                    <span class="stat-label">Google Rating</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">5,000+</span>
-                    <span class="stat-label">Happy Clients</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">Expert Providers</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator" aria-hidden="true">
-            <div class="mouse"></div>
-            <span>Scroll</span>
         </div>
     </section>
 
