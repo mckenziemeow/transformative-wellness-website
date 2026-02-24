@@ -279,14 +279,18 @@ We believe in transparent pricing! Here are our most popular treatments:
 
 We also offer membership programs for savings:
 
-💎 BEAUTY BANK - $149/month
-• $149 monthly credit
-• Discounts on all services
-• Compl quarterly B12
+💎 BEAUTY BANK - $175/month
+• $150 monthly credit
+• 10% off neurotoxin
+• $100 off GLP-1 monthly
+• 10% off skincare & retail
+• Complimentary B12 quarterly
 
-💎 PERKS MEMBERSHIP - $49/month
-• Discounts on services
-• 2x yearly B12 shots
+💎 PERKS MEMBERSHIP - $50/month
+• 10% off neurotoxin
+• $100 off GLP-1 monthly
+• 10% off skincare & retail
+• Complimentary B12 2× per year
 
 Want a personalized quote?
 ```

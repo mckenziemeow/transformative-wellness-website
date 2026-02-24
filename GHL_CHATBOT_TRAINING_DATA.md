@@ -282,26 +282,28 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 
 ## 💎 MEMBERSHIP PROGRAMS
 
-### Beauty Bank - $149/month
+### Beauty Bank - $175/month
 **Best for:** Regular clients who want maximum savings
 
 **Includes:**
-- $149 monthly credit (use on any service)
+- $150 monthly credit (use on any service)
 - 10% off neurotoxin (Botox/Dysport)
-- $100 off GLP-1 weight loss
-- 10% off retail products
+- $100 off GLP-1 weight loss monthly
+- 10% off skincare & retail
 - Complimentary B12 shot quarterly
-- Priority booking
+- Credits roll over and never expire while member
 - 6-month minimum commitment
 
-### Perks Membership - $49/month
+### Perks Membership - $50/month
 **Best for:** Occasional visitors who want discounts
 
 **Includes:**
-- 10% off all services
-- 10% off retail products
-- Complimentary B12 shot 2x per year
-- Exclusive member promotions
+- 10% off neurotoxin (Botox/Dysport)
+- $100 off GLP-1 weight loss monthly
+- 10% off skincare & retail
+- Complimentary B12 shot 2× per year
+- Member-only promotions
+- Early access to specials
 - 6-month minimum commitment
 
 **Common Questions:**
