@@ -27,11 +27,11 @@
 
 ### Business Hours
 - [ ] Monday: 9:00 AM - 6:00 PM
-- [ ] Tuesday: 9:00 AM - 6:00 PM
+- [ ] Tuesday: CLOSED
 - [ ] Wednesday: 9:00 AM - 6:00 PM
-- [ ] Thursday: 9:00 AM - 6:00 PM
+- [ ] Thursday: CLOSED
 - [ ] Friday: 9:00 AM - 6:00 PM
-- [ ] Saturday: 10:00 AM - 4:00 PM
+- [ ] Saturday: 9:00 AM - 4:00 PM
 - [ ] Sunday: Closed
 - [ ] Timezone: America/Los_Angeles (Pacific Time)
 
@@ -41,7 +41,13 @@
 Hi! 👋 Thanks for reaching out to Transformative Wellness.
 
 Our office is currently closed. Our hours are:
-Mon-Fri: 9am-6pm | Sat: 10am-4pm
+Monday: 9am - 6pm
+Tuesday: CLOSED
+Wednesday: 9am - 6pm
+Thursday: CLOSED
+Friday: 9am - 6pm
+Saturday: 9am - 4pm
+Sunday: CLOSED
 
 Leave your message here and we'll respond first thing when we're back! 
 
@@ -59,7 +65,7 @@ For immediate booking, visit: https://www.mypatientvisit.com/onlinescheduling/#/
 - [ ] Set as default/start flow
 - [ ] Add welcome message from GHL_CHATBOT_SETUP.md
 - [ ] Add 5 quick reply buttons:
-  1. 🗓️ Book Consultation (Free)
+  1. 🗓️ Book Consultation ($25, applied to treatment)
   2. 💉 Treatment Info
   3. 💰 Pricing & Packages
   4. 📍 Location & Hours
@@ -102,11 +108,11 @@ For immediate booking, visit: https://www.mypatientvisit.com/onlinescheduling/#/
 
 ### Flow 6: Speak to Human
 - [ ] Create flow named "Speak to Human"
-- [ ] Add contact info message
+- [ ] Add contact info message (include BOTH phone numbers: 858-444-0414 for Vista, 951-446-6623 for UFC locations)
 - [ ] Set action: "Transfer to Live Chat" or "Notify Team"
 - [ ] Add 3 quick reply buttons:
-  1. Call Now
-  2. Text Now
+  1. Call Vista: 858-444-0414
+  2. Call UFC Locations: 951-446-6623
   3. Book Online
 
 ---
@@ -141,6 +147,33 @@ For immediate booking, visit: https://www.mypatientvisit.com/onlinescheduling/#/
 - [ ] Add pricing
 - [ ] Add "Book Service" button
 
+### Flow 7: Memberships (NEW)
+- [ ] Create flow named "Memberships"
+- [ ] Add Beauty Bank ($149/month) and Perks ($49/month) details
+- [ ] Include benefits: monthly credits, neurotoxin discounts, GLP-1 discounts
+- [ ] Add 3 quick reply buttons:
+  1. Join Beauty Bank
+  2. Join Perks
+  3. Schedule Consultation
+
+### Flow 8: Financing (NEW)
+- [ ] Create flow named "Financing"
+- [ ] Add financing options: Cherry, CareCredit, Affirm
+- [ ] Mention membership savings
+- [ ] Add 3 quick reply buttons:
+  1. Schedule Consultation
+  2. Learn About Memberships
+  3. Apply for Financing
+
+### Flow 9: Consultation Fee (NEW)
+- [ ] Create flow named "Consultation Fee"
+- [ ] Explain $25 fee (applied toward treatment)
+- [ ] List what's included: assessment, goal review, Signature Transformation plan
+- [ ] Add 3 quick reply buttons:
+  1. Schedule Consultation
+  2. Learn About Services
+  3. Contact Us
+
 ---
 
 ## ✅ STEP 5: Set Up Keyword Triggers
@@ -156,7 +189,10 @@ For immediate booking, visit: https://www.mypatientvisit.com/onlinescheduling/#/
 | `weight`, `semaglutide`, `tirzepatide`, `ozempic`, `mounjaro` | → Send to Flow 3C: Weight Loss |
 | `IV`, `drip`, `NAD`, `vitamin`, `hydration` | → Send to Flow 3D: IV Therapy |
 | `hours`, `location`, `address`, `parking`, `directions` | → Send to Flow 5: Location |
-| `membership`, `beauty bank`, `perks`, `package` | → Send membership info flow |
+| `membership`, `beauty bank`, `perks`, `package` | → Send to Flow 7: Memberships |
+| `financing`, `payment plan`, `affirm`, `cherry`, `carecredit` | → Send to Flow 8: Financing |
+| `consultation fee`, `consultation cost`, `consultation price` | → Send to Flow 9: Consultation Fee |
+| `ufc`, `murrieta`, `corona` | → Send UFC location info |
 | `human`, `person`, `speak`, `call`, `phone` | → Send to Flow 6: Speak to Human |
 | `complaint`, `problem`, `unhappy`, `refund`, `issue` | → Transfer to human IMMEDIATELY |
 
