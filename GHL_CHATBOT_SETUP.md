@@ -52,7 +52,7 @@ How can we help you today?
 ```
 Great choice! 🎉 
 
-We offer complimentary consultations where you'll meet with one of our expert injectors. We'll discuss your goals and create a personalized treatment plan.
+We offer personalized consultations ($25, applied toward your treatment) where you'll meet with one of our expert injectors. We'll discuss your goals and create a personalized treatment plan.
 
 Choose how you'd like to book:
 ```
@@ -181,7 +181,7 @@ Ready to start your journey?
 
 **Bot Message:**
 ```
-IV Vitamin Therapy delivers nutrients directly to your bloodstream:
+At our UFC Murrieta and UFC Corona locations, we provide IV therapy and vitamin injections focused on recovery and performance for athletes and fitness enthusiasts. At our Vista clinic, IV therapy is offered as part of comprehensive personalized wellness planning and aesthetic optimization.
 
 💧 HYDRATION DRIP - $150
 • Instant hydration, hangover relief
@@ -197,12 +197,17 @@ IV Vitamin Therapy delivers nutrients directly to your bloodstream:
 • The "gold standard" in wellness
 
 Sessions take 45-60 minutes. Perfect for a mid-day wellness boost!
+
+Which location are you inquiring about? I can connect you with the right team:
+• Vista: 858-444-0414
+• UFC Murrieta/Corona: 951-446-6623
 ```
 
 **Quick Reply Buttons:**
-- Book IV Therapy
+- Book at Vista Location
+- Book at UFC Murrieta
+- Book at UFC Corona
 - View All IV Options
-- Gift Cards Available?
 
 ---
 
@@ -279,14 +284,14 @@ We believe in transparent pricing! Here are our most popular treatments:
 
 We also offer membership programs for savings:
 
-💎 BEAUTY BANK - $175/month
-• $150 monthly credit
+💎 BEAUTY BANK - $149/month
+• $149 monthly credit
 • 10% off neurotoxin
 • $100 off GLP-1 monthly
 • 10% off skincare & retail
 • Complimentary B12 quarterly
 
-💎 PERKS MEMBERSHIP - $50/month
+💎 PERKS MEMBERSHIP - $49/month
 • 10% off neurotoxin
 • $100 off GLP-1 monthly
 • 10% off skincare & retail
@@ -308,27 +313,43 @@ Want a personalized quote?
 
 **Bot Message:**
 ```
-📍 Transformative Wellness
+📍 Transformative Wellness - Vista (Main)
 969 Vale Terrace Drive, Suite B
 Vista, CA 92084
+Phone: (858) 444-0414
+Services: All services including injectables, lasers, advanced aesthetics
+
+📍 UFC Gym Murrieta
+40545 California Oaks Rd Suite C-2, Murrieta, CA 92562
+Phone: (951) 446-6623
+Services: IV Therapy, Vitamin Shots, Weight-Loss Programs, Peptides
+
+📍 UFC Gym Corona
+470 McKinley St, Corona, CA 92879
+Phone: (951) 446-6623
+Services: IV Therapy, Vitamin Shots, Weight-Loss Programs, Peptides
 
 🕐 Hours:
-Monday - Friday: 9am - 6pm
-Saturday: 10am - 4pm
-Sunday: Closed
+Monday: 9am - 6pm
+Tuesday: CLOSED
+Wednesday: 9am - 6pm
+Thursday: CLOSED
+Friday: 9am - 6pm
+Saturday: 9am - 4pm
+Sunday: CLOSED
 
-📞 Phone: (858) 444-0414
 📧 Email: info@transformativemedspa.com
 
-We serve all of North County San Diego including Vista, Carlsbad, Oceanside, San Marcos, and Escondido.
+We serve all of North County San Diego and the Inland Empire.
 
-Free parking available!
+Free parking available at all locations!
 ```
 
 **Quick Reply Buttons:**
-- Get Directions
+- Get Directions to Vista
+- Get Directions to UFC Murrieta
+- Get Directions to UFC Corona
 - Book Appointment
-- Contact Us
 
 ---
 
@@ -340,9 +361,22 @@ Free parking available!
 ```
 We'd love to speak with you directly!
 
-📞 Call us: (858) 444-0414
-💬 Text us: (858) 444-0414
+📍 Vista Location:
+📞 Call/Text: (858) 444-0414
+
+📍 UFC Murrieta & Corona Locations:
+📞 Call/Text: (951) 446-6623
+
 📧 Email: info@transformativemedspa.com
+
+🕐 Hours:
+Monday: 9am - 6pm
+Tuesday: CLOSED
+Wednesday: 9am - 6pm
+Thursday: CLOSED
+Friday: 9am - 6pm
+Saturday: 9am - 4pm
+Sunday: CLOSED
 
 During business hours, we typically answer within minutes. If you reach voicemail, leave a message and we'll call you back within 24 hours.
 
@@ -350,9 +384,98 @@ You can also book directly online anytime!
 ```
 
 **Quick Reply Buttons:**
-- Call Now
-- Text Now
+- Call Vista: 858-444-0414
+- Call UFC Locations: 951-446-6623
 - Book Online
+
+---
+
+### FLOW 7: Memberships
+
+**If user asks about memberships:**
+
+**Bot Message:**
+```
+We offer two membership tiers designed for long-term value:
+
+💎 BEAUTY BANK - $149/month
+• $149 monthly credit toward any service
+• 10% off neurotoxin (Botox/Dysport)
+• $100 off GLP-1 weight loss monthly
+• 10% off skincare & retail
+• Complimentary B12 shot quarterly
+• Credits roll over and never expire while member
+• 6-month minimum commitment
+
+💎 PERKS MEMBERSHIP - $49/month
+• 10% off neurotoxin (Botox/Dysport)
+• $100 off GLP-1 weight loss monthly
+• 10% off skincare & retail
+• Complimentary B12 shot 2× per year
+• Member-only promotions
+• Early access to specials
+• 6-month minimum commitment
+
+Both provide preferred pricing over single-session treatments. Let's schedule your consultation to determine which aligns with your transformation goals!
+```
+
+**Quick Reply Buttons:**
+- Join Beauty Bank
+- Join Perks
+- Schedule Consultation
+
+---
+
+### FLOW 8: Financing
+
+**If user asks about financing:**
+
+**Bot Message:**
+```
+Yes, we offer flexible financing options to make your transformation journey accessible:
+
+💳 Cherry - 0% interest plans available
+💳 CareCredit - Healthcare financing
+💳 Affirm - Flexible payment plans
+
+We can discuss payment options during your consultation to find what works best for you.
+
+We also offer membership programs that provide long-term value and preferred pricing:
+• Beauty Bank: $149/month with $149 monthly credit
+• Perks: $49/month with discounts on services
+
+Would you like us to reserve your consultation?
+```
+
+**Quick Reply Buttons:**
+- Schedule Consultation
+- Learn About Memberships
+- Apply for Financing
+
+---
+
+### FLOW 9: Consultation Fee
+
+**If user asks about consultation fee:**
+
+**Bot Message:**
+```
+Yes, the consultation fee is $25, which is applied toward your treatment when you move forward.
+
+This covers:
+✓ Personalized assessment
+✓ Goal review
+✓ Signature Transformation plan design
+
+Your first visit begins with this consultation where we assess your goals and design your personalized plan. From there, we create a structured treatment roadmap tailored specifically to you.
+
+Ready to get started?
+```
+
+**Quick Reply Buttons:**
+- Schedule Consultation
+- Learn About Services
+- Contact Us
 
 ---
 
@@ -369,7 +492,10 @@ Set up these keywords to auto-trigger responses:
 | "weight", "semaglutide", "tirzepatide", "ozempic" | Send FLOW 3C: Weight Loss |
 | "IV", "drip", "NAD" | Send FLOW 3D: IV Therapy |
 | "hours", "location", "address", "parking" | Send FLOW 5: Location |
-| "membership", "beauty bank", "perks" | Send membership info |
+| "membership", "beauty bank", "perks" | Send FLOW 7: Memberships |
+| "financing", "payment plan", "affirm", "cherry", "carecredit" | Send FLOW 8: Financing |
+| "consultation fee", "consultation cost" | Send FLOW 9: Consultation Fee |
+| "ufc", "murrieta", "corona" | Send UFC location info |
 | "human", "person", "speak", "call" | Transfer to live chat or send FLOW 6 |
 
 ---
@@ -381,7 +507,7 @@ Set up these keywords to auto-trigger responses:
 Hi! 👋 Thanks for reaching out to Transformative Wellness.
 
 Our office is currently closed. Our hours are:
-Mon-Fri: 9am-6pm | Sat: 10am-4pm
+Mon/Wed/Fri: 9am-6pm | Tue/Thu: CLOSED | Sat: 9am-4pm
 
 Leave your message here and we'll respond first thing when we're back! 
 
@@ -408,8 +534,12 @@ https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=
 - **Avatar:** Upload your logo or team photo
 
 ### Step 3: Set Business Hours
-- Monday-Friday: 9:00 AM - 6:00 PM
-- Saturday: 10:00 AM - 4:00 PM
+- Monday: 9:00 AM - 6:00 PM
+- Tuesday: CLOSED
+- Wednesday: 9:00 AM - 6:00 PM
+- Thursday: CLOSED
+- Friday: 9:00 AM - 6:00 PM
+- Saturday: 9:00 AM - 4:00 PM
 - Sunday: Closed
 - Timezone: America/Los_Angeles (Pacific)
 

@@ -17,9 +17,13 @@ Vista, CA 92084
 - Booking: https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744
 
 **Hours:**
-- Monday-Friday: 9:00 AM - 6:00 PM
-- Saturday: 10:00 AM - 4:00 PM
-- Sunday: Closed
+- Monday: 9:00 AM - 6:00 PM
+- Tuesday: CLOSED
+- Wednesday: 9:00 AM - 6:00 PM
+- Thursday: CLOSED
+- Friday: 9:00 AM - 6:00 PM
+- Saturday: 9:00 AM - 4:00 PM
+- Sunday: CLOSED
 
 **Social Media:**
 - Instagram: @transformative_wellness
@@ -79,7 +83,7 @@ Vista, CA 92084
   - Masseter (TMJ/jaw slimming)
 
 **Common Questions:**
-- "How many units do I need?" → Depends on area and muscle strength. Forehead: 10-20 units, Crow's feet: 12-24 units, Frown lines: 20-40 units. Book a free consultation for exact quote.
+- "How many units do I need?" → Depends on area and muscle strength. Forehead: 10-20 units, Crow's feet: 12-24 units, Frown lines: 20-40 units. Book a consultation ($25, applied to your treatment) for exact quote.
 - "Does it hurt?" → Minimal discomfort. We use ultra-fine needles and can apply numbing cream.
 - "When will I see results?" → Initial results in 3-5 days, full results in 10-14 days.
 - "Will I look frozen?" → No! We specialize in natural-looking results. You'll still have expression.
@@ -282,11 +286,11 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 
 ## 💎 MEMBERSHIP PROGRAMS
 
-### Beauty Bank - $175/month
+### Beauty Bank - $149/month
 **Best for:** Regular clients who want maximum savings
 
 **Includes:**
-- $150 monthly credit (use on any service)
+- $149 monthly credit (use on any service)
 - 10% off neurotoxin (Botox/Dysport)
 - $100 off GLP-1 weight loss monthly
 - 10% off skincare & retail
@@ -294,7 +298,7 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 - Credits roll over and never expire while member
 - 6-month minimum commitment
 
-### Perks Membership - $50/month
+### Perks Membership - $49/month
 **Best for:** Occasional visitors who want discounts
 
 **Includes:**
@@ -316,7 +320,7 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 ## 🎁 PACKAGES & PROMOTIONS
 
 ### Current Promotions (Update as needed)
-- **New Client Special:** Free consultation + $50 off first treatment
+- **New Client Special:** $25 consultation (applied to treatment) + welcome perks
 - **Package Pricing:** Buy 3 treatments, get 10% off
 - **Referral Program:** Give $50, Get $50
 - **Gift Cards:** Available in any amount
@@ -332,7 +336,7 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 ## 📋 POLICIES & PROCEDURES
 
 ### Consultations
-- **Cost:** FREE for all new clients
+- **Cost:** $25 (applied toward your treatment when you move forward)
 - **Duration:** 30-45 minutes
 - **Includes:** Skin/concern assessment, personalized treatment plan, pricing
 - **Booking:** Online or phone
@@ -347,6 +351,7 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 - Cash
 - **Cherry Financing** (0% interest plans available)
 - **CareCredit** (healthcare financing)
+- **Affirm** (flexible payment plans)
 - HSA/FSA cards accepted for medical services
 
 ### Safety & Credentials
@@ -358,21 +363,39 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 
 ---
 
-## 🗺️ SERVICE AREA
+## 🗺️ LOCATIONS & SERVICE AREA
 
-**Primary Location:** Vista, CA  
-**Serves:** All of North County San Diego
+### Primary Location - Vista
+**Address:** 969 Vale Terrace Drive, Suite B, Vista, CA 92084  
+**Phone:** (858) 444-0414  
+**Services:** All services including injectables, lasers, advanced aesthetics
+
+### UFC Gym Murrieta Location
+**Address:** 40545 California Oaks Rd Suite C-2, Murrieta, CA 92562  
+**Phone:** (951) 446-6623  
+**Services Available:** IV Therapy, Vitamin Shots, Weight-Loss Programs, Peptides  
+**Note:** Located inside UFC Gym - services available to all clients (no membership required)
+
+### UFC Gym Corona Location
+**Address:** 470 McKinley St, Corona, CA 92879  
+**Phone:** (951) 446-6623  
+**Services Available:** IV Therapy, Vitamin Shots, Weight-Loss Programs, Peptides  
+**Note:** Located inside UFC Gym - services available to all clients (no membership required)
+
+### Service Area
+**Serves:** All of North County San Diego and Inland Empire
 
 **Nearby Cities:**
-- Carlsbad (10 min)
-- Oceanside (15 min)
-- San Marcos (10 min)
-- Escondido (20 min)
-- Encinitas (20 min)
-- Fallbrook (25 min)
-- Rancho Bernardo (30 min)
+- Carlsbad (10 min from Vista)
+- Oceanside (15 min from Vista)
+- San Marcos (10 min from Vista)
+- Escondido (20 min from Vista)
+- Encinitas (20 min from Vista)
+- Fallbrook (25 min from Vista)
+- Murrieta (30 min from Vista)
+- Corona (45 min from Vista)
 
-**Parking:** Free parking available at Vista location
+**Parking:** Free parking available at all locations
 
 ---
 
@@ -380,8 +403,8 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 
 ### General Questions
 
-**Q: Do you offer free consultations?**  
-A: Yes! All new clients receive a complimentary 30-45 minute consultation.
+**Q: Is there a consultation fee?**  
+A: Yes, the consultation fee is $25, which is applied toward your treatment when you move forward. This covers your personalized assessment, goal review, and Signature Transformation plan design.
 
 **Q: How do I book an appointment?**  
 A: Three ways: 1) Book online at our patient portal, 2) Call (858) 444-0414, 3) Use this chat widget
