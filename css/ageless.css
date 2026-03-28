@@ -1,0 +1,256 @@
+/**
+ * Ageless AI (RepeatMD) — Transformative Wellness · Vista, CA only
+ * Accents: #8B5CF6 → #EC4899
+ */
+
+.navbar .nav-menu .nav-ageless-link {
+  color: #7c3aed !important;
+  font-weight: 700 !important;
+  position: relative;
+  padding-right: 0.35rem;
+}
+.navbar .nav-menu .nav-ageless-link:hover {
+  color: #6d28d9 !important;
+}
+.nav-ageless-new {
+  position: absolute;
+  top: -0.35rem;
+  right: -1.75rem;
+  background: #ec4899;
+  color: #fff;
+  font-size: 0.55rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+@media (max-width: 1024px) {
+  .nav-ageless-new {
+    right: auto;
+    left: 100%;
+    margin-left: 0.35rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.ageless-hero-cta {
+  text-align: center;
+  margin: 1.25rem auto 1.5rem;
+  max-width: 36rem;
+}
+.ageless-hero-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: #fff !important;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ageless-hero-btn:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);
+}
+.ageless-hero-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.45;
+}
+.ageless-hero-note a {
+  color: #e9d5ff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.ageless-hero-note a:hover {
+  color: #fff;
+}
+
+.ageless-service-wrap {
+  padding: 0 0 1.5rem;
+  margin-top: -0.5rem;
+}
+.ageless-service-cta {
+  background: #f5f3ff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 0 auto;
+  max-width: 720px;
+  border-left: 4px solid #8b5cf6;
+  text-align: center;
+}
+.ageless-service-q {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+.ageless-service-btn {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  background: #8b5cf6;
+  color: #fff !important;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+.ageless-service-btn:hover {
+  background: #7c3aed;
+  color: #fff !important;
+}
+.ageless-service-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.footer-ageless-cta {
+  text-align: center;
+  padding: 2rem 1.25rem;
+  background: #f5f3ff;
+  margin: 2rem 0 0;
+  border-radius: 12px;
+  grid-column: 1 / -1;
+}
+.footer-ageless-cta h3 {
+  margin: 0 0 0.5rem;
+  color: #1f2937;
+  font-size: 1.35rem;
+}
+.footer-ageless-cta > p {
+  margin: 0 0 0.75rem;
+  color: #6b7280;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-ageless-cta > p a {
+  color: #7c3aed;
+  font-weight: 600;
+}
+.footer-ageless-address {
+  font-size: 0.9rem !important;
+  margin-bottom: 1rem !important;
+}
+.ageless-footer-btn {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: #fff !important;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ageless-footer-btn:hover {
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.35);
+}
+
+.ageless-popup {
+  display: none;
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 10060;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 1.25rem 1.25rem;
+  max-width: 380px;
+  width: calc(100vw - 2.5rem);
+  border: 2px solid #8b5cf6;
+  box-sizing: border-box;
+}
+.ageless-popup.ageless-popup--visible {
+  display: block;
+}
+.ageless-popup-close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.65rem;
+  background: none;
+  border: none;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 0.25rem;
+}
+.ageless-popup-close:hover {
+  color: #4b5563;
+}
+.ageless-popup-title {
+  margin: 0 0 0.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+.ageless-popup-text {
+  margin: 0 0 1rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.ageless-popup-btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: #fff !important;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.ageless-popup-btn:hover {
+  color: #fff !important;
+}
+
+.ageless-mobile-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10050;
+  background: #fff;
+  padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+.ageless-mobile-bar-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: #fff !important;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.ageless-mobile-bar-link:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .ageless-mobile-bar {
+    display: block;
+  }
+  body {
+    padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+  }
+}
