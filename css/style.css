@@ -4038,8 +4038,20 @@ html, body {
 }
 
 .floating-cta .btn-call {
-    background-color: var(--color-link);
+    background-color: var(--ocean-mist, var(--color-accent));
     color: #fff;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+}
+
+.floating-cta .btn-book {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
@@ -6665,6 +6677,11 @@ img-comparison-slider {
     cursor: pointer;
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius-sm);
+    min-width: 48px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .scroll-promo-bar {

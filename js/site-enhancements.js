@@ -79,17 +79,27 @@
         if (typeof fbq === "function") {
           fbq("track", "Contact");
         }
+        try {
+          a.dispatchEvent(new CustomEvent("tw:phone-click", { bubbles: true }));
+        } catch (e) {
+          /* IE11 not supported; ignore */
+        }
       });
     });
   }
 
   function initPromoInject() {
     var cfg = window.TW_PROMO || {};
+    var PC = window.PROMO_CONFIG || {};
     document.querySelectorAll("[data-promo-package-urgency]").forEach(function (el) {
-      if (cfg.packagesHeadline) el.textContent = cfg.packagesHeadline;
+      if (PC.packagePromo && PC.packagePromo.active && PC.packagePromo.text) {
+        el.textContent = PC.packagePromo.text;
+      } else if (cfg.packagesHeadline) el.textContent = cfg.packagesHeadline;
     });
     document.querySelectorAll("[data-promo-membership]").forEach(function (el) {
-      if (cfg.membershipHeadline) el.textContent = cfg.membershipHeadline;
+      if (PC.membershipPromo && PC.membershipPromo.active && PC.membershipPromo.text) {
+        el.textContent = PC.membershipPromo.text;
+      } else if (cfg.membershipHeadline) el.textContent = cfg.membershipHeadline;
     });
   }
 
