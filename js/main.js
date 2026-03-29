@@ -226,10 +226,13 @@ document.addEventListener('DOMContentLoaded', function() {
             reply.addEventListener('click', function() {
                 const text = this.textContent;
                 
-                // Add user message
+                // Add user message (text only — avoid HTML injection)
                 const userMessage = document.createElement('div');
                 userMessage.className = 'chat-message user';
-                userMessage.innerHTML = `<div class="message-content">${text}</div>`;
+                const userContent = document.createElement('div');
+                userContent.className = 'message-content';
+                userContent.textContent = text;
+                userMessage.appendChild(userContent);
                 chatMessages.appendChild(userMessage);
                 
                 // Scroll to bottom
