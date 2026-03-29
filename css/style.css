@@ -1,23 +1,29 @@
 /* Transformative Wellness - Main Stylesheet */
 
 :root {
-    /* Official brand palette (Notion Brand Kit) */
-    --color-primary: #5c4135;       /* Deep Cocoa */
-    --color-secondary: #c5b4a0;     /* Soft Sandstone */
-    --color-accent: #aa8f80;        /* Clay Rose */
-    --color-background: #f3eee5;    /* Bone Cream */
-    --color-surface: #ffffff;
-    --color-text: #5c4135;
-    --color-text-light: #aa8f80;   /* Clay Rose */
-    --color-text-muted: #c5b4a0;   /* Soft Sandstone */
-    --color-border: #d7c8bb;       /* Clay Beige */
-    --color-cream: #e8dccb;        /* Creamy Beige */
+    /* Official Transformative Wellness palette (Notion Brand Kit) */
+    --color-primary: #5c4135;       /* Deep Cocoa — nav, headings, primary buttons */
+    --color-secondary: #aa8f80;     /* Clay Rose — secondary text, hover states */
+    --color-accent: #9ac1c4;        /* Ocean Mist Blue — CTAs, links, highlights */
+    --color-background: #f3eee5;    /* Bone Cream — page background */
+    --color-surface: #e8dccb;       /* Creamy Beige — cards, sections */
+    --color-text: #4e2c2c;          /* Deep Maroon / Fig — body text */
+    --color-text-light: #c5b4a0;    /* Soft Sandstone — muted / secondary text */
+    --color-text-muted: #c5b4a0;
+    --color-border: #d7c8bb;        /* Clay Beige */
+    --color-hero-accent: #9ac1c4;   /* “Live Better” & hero highlights */
+    --color-button-primary-bg: #5c4135;
+    --color-button-primary-text: #f3eee5;
+    --color-button-secondary-bg: #9ac1c4;
+    --color-button-secondary-text: #4e2c2c;
+
+    --color-cream: #e8dccb;
     --color-card-bg: #d7c8bb;
-    --color-link: #9ac1c4;         /* Ocean Mist Blue */
-    --color-footer: #4e2c2c;       /* Deep Maroon / Fig */
-    --color-sage: #9ac1c4;         /* Alias: links & icon accents (replaces old green) */
-    --color-sage-light: #ebe4db;   /* Warm soft wash (inline gradients) */
-    --color-accent-light: #ede5de; /* Warm highlight panels */
+    --color-link: #9ac1c4;
+    --color-footer: #4e2c2c;
+    --color-sage: #9ac1c4;
+    --color-sage-light: #ebe4db;
+    --color-accent-light: #ede5de;
 
     /* Typography */
     --font-heading: 'Playfair Display', serif;
@@ -197,13 +203,13 @@ p {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
-    color: #fff;
+    background-color: var(--color-button-primary-bg);
+    color: var(--color-button-primary-text);
 }
 
 .btn-primary:hover {
     background-color: var(--color-footer);
-    color: #fff;
+    color: var(--color-button-primary-text);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -216,7 +222,7 @@ p {
 
 .btn-outline:hover {
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-button-primary-text);
 }
 
 .btn-large {
@@ -266,7 +272,7 @@ p {
 }
 
 .nav-menu a:hover {
-    color: var(--color-accent);
+    color: var(--color-secondary);
 }
 
 .navbar .nav-menu a.nav-ageless-link {
@@ -483,7 +489,7 @@ html, body {
 }
 
 .hero--welcome .hero-title .accent {
-  color: var(--color-accent);
+  color: var(--color-hero-accent);
   font-style: italic;
   font-weight: 500;
 }
@@ -492,7 +498,7 @@ html, body {
   margin: 0;
   font-size: clamp(1rem, 2.4vw, 1.2rem);
   line-height: 1.55;
-  color: rgba(92, 65, 53, 0.92);
+  color: rgba(78, 44, 44, 0.92);
   max-width: 36rem;
   opacity: 1;
   text-shadow: none;
@@ -543,29 +549,30 @@ html, body {
 }
 
 .hero--welcome .hero-buttons .btn-primary {
-  background: var(--color-primary);
-  color: #fff;
-  border: 2px solid var(--color-primary);
+  background: var(--color-button-primary-bg);
+  color: var(--color-button-primary-text);
+  border: 2px solid var(--color-button-primary-bg);
 }
 
 .hero--welcome .hero-buttons .btn-primary:hover {
   background: var(--color-footer);
   border-color: var(--color-footer);
-  color: #fff;
+  color: var(--color-button-primary-text);
 }
 
 .hero--welcome .hero-buttons .btn-secondary {
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: var(--color-button-secondary-bg);
+  color: var(--color-button-secondary-text);
+  border: 2px solid var(--color-button-secondary-bg);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .hero--welcome .hero-buttons .btn-secondary:hover {
-  background: var(--color-primary);
-  color: #fff;
-  border-color: var(--color-primary);
+  background: var(--color-button-secondary-bg);
+  color: var(--color-button-secondary-text);
+  border-color: var(--color-button-secondary-bg);
+  filter: brightness(0.94);
 }
 
 @media (max-width: 768px) {
@@ -610,7 +617,7 @@ html, body {
 }
 
 .hero-badge i {
-    color: #f4c430;
+    color: var(--color-accent);
 }
 
 /* Award Badge */
@@ -618,18 +625,18 @@ html, body {
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-sm);
-    background: linear-gradient(135deg, #f4c430 0%, #d4a017 100%);
-    color: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-accent) 0%, #7aaeb2 100%);
+    color: var(--color-button-secondary-text);
     padding: 10px 20px;
     border-radius: var(--radius-md);
     font-size: 0.9375rem;
     margin-bottom: var(--spacing-md);
-    box-shadow: 0 4px 12px rgba(244, 196, 48, 0.3);
+    box-shadow: 0 4px 12px rgba(154, 193, 196, 0.35);
 }
 
 .award-badge i {
     font-size: 1.25rem;
-    color: var(--color-primary);
+    color: var(--color-button-secondary-text);
 }
 
 .award-badge strong {
@@ -1111,7 +1118,7 @@ html, body {
 }
 
 .rating-item .stars i {
-    color: #f4c430;
+    color: var(--color-accent);
     font-size: 0.875rem;
 }
 
@@ -1211,7 +1218,7 @@ html, body {
 
 .reach-strip-link--primary .reach-strip-icon {
     background: var(--color-primary);
-    color: #fff;
+    color: var(--color-button-primary-text);
 }
 
 .reach-strip-title {
@@ -1305,7 +1312,7 @@ html, body {
 }
 
 .testimonial-stars i {
-    color: #f4c430;
+    color: var(--color-accent);
     font-size: 0.875rem;
 }
 
@@ -1347,12 +1354,12 @@ html, body {
 }
 
 .cta-content h2 {
-    color: white;
+    color: var(--color-button-primary-text);
     margin-bottom: var(--spacing-md);
 }
 
 .cta-content p {
-    color: rgba(255,255,255,0.8);
+    color: rgba(243, 238, 229, 0.88);
     font-size: 1.125rem;
     margin-bottom: var(--spacing-lg);
 }
@@ -1364,22 +1371,23 @@ html, body {
 }
 
 .cta-buttons .btn-primary {
-    background-color: white;
-    color: var(--color-primary);
+    background-color: var(--color-button-primary-text);
+    color: var(--color-button-primary-bg);
 }
 
 .cta-buttons .btn-primary:hover {
-    background-color: var(--color-cream);
+    background-color: var(--color-accent);
+    color: var(--color-button-secondary-text);
 }
 
 .cta-buttons .btn-outline {
-    border-color: rgba(255,255,255,0.5);
-    color: white;
+    border-color: rgba(243, 238, 229, 0.55);
+    color: var(--color-button-primary-text);
 }
 
 .cta-buttons .btn-outline:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-color: white;
+    background-color: rgba(243, 238, 229, 0.12);
+    border-color: var(--color-button-primary-text);
 }
 
 /* Footer */
@@ -2892,12 +2900,12 @@ html, body {
 }
 
 .booking-cta-content h2 {
-    color: white;
+    color: var(--color-button-primary-text);
     margin-bottom: var(--spacing-md);
 }
 
 .booking-cta-content p {
-    color: rgba(255,255,255,0.8);
+    color: rgba(243, 238, 229, 0.88);
     font-size: 1.125rem;
     margin-bottom: var(--spacing-lg);
 }
@@ -2909,22 +2917,23 @@ html, body {
 }
 
 .booking-buttons .btn-primary {
-    background-color: white;
-    color: var(--color-primary);
+    background-color: var(--color-button-primary-text);
+    color: var(--color-button-primary-bg);
 }
 
 .booking-buttons .btn-primary:hover {
-    background-color: var(--color-cream);
+    background-color: var(--color-accent);
+    color: var(--color-button-secondary-text);
 }
 
 .booking-buttons .btn-outline {
-    border-color: rgba(255,255,255,0.5);
-    color: white;
+    border-color: rgba(243, 238, 229, 0.55);
+    color: var(--color-button-primary-text);
 }
 
 .booking-buttons .btn-outline:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-color: white;
+    background-color: rgba(243, 238, 229, 0.12);
+    border-color: var(--color-button-primary-text);
 }
 
 /* Additional Responsive Styles */
@@ -3662,7 +3671,7 @@ html, body {
     width: 60px;
     height: 60px;
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-button-primary-text);
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -3699,7 +3708,7 @@ html, body {
 
 .chat-header {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-button-primary-text);
     padding: var(--spacing-md) var(--spacing-lg);
     display: flex;
     align-items: center;
@@ -3714,7 +3723,7 @@ html, body {
 .chat-close {
     background: none;
     border: none;
-    color: white;
+    color: var(--color-button-primary-text);
     cursor: pointer;
     font-size: 1.25rem;
 }
@@ -3763,7 +3772,7 @@ html, body {
 
 .chat-quick-reply:hover {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-button-primary-text);
     border-color: var(--color-primary);
 }
 
@@ -3809,7 +3818,7 @@ html, body {
 
 .filter-btn.active {
     background-color: var(--color-primary);
-    color: white;
+    color: var(--color-button-primary-text);
     border-color: var(--color-primary);
 }
 
@@ -4851,12 +4860,14 @@ html, body {
 }
 
 .rewards-cta .btn-primary {
-    background-color: var(--color-accent);
-    color: var(--color-primary);
+    background-color: var(--color-button-secondary-bg);
+    color: var(--color-button-secondary-text);
 }
 
 .rewards-cta .btn-primary:hover {
-    background-color: #d4b87a;
+    background-color: var(--color-button-secondary-bg);
+    color: var(--color-button-secondary-text);
+    filter: brightness(0.94);
 }
 
 .rewards-phone {
@@ -5101,7 +5112,7 @@ html, body {
 }
 
 .rating-score .stars i {
-    color: #f4c430;
+    color: var(--color-accent);
     font-size: 1.25rem;
 }
 
@@ -5211,8 +5222,8 @@ html, body {
 
 /* Urgency Banner */
 .urgency-banner {
-    background: linear-gradient(135deg, #c9a86c 0%, #8b7355 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
+    color: var(--color-button-primary-text);
     padding: var(--spacing-sm) 0;
     position: relative;
     z-index: 1001;
@@ -5238,13 +5249,13 @@ html, body {
 .urgency-banner .btn-small {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
-    background: white;
+    background: var(--color-button-primary-text);
     color: var(--color-primary);
     border: none;
 }
 
 .urgency-banner .btn-small:hover {
-    background: var(--color-cream);
+    background: var(--color-surface);
     transform: translateY(-1px);
 }
 

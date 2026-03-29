@@ -5,22 +5,22 @@
 
 /* Nav — AI Treatment Advisor */
 .navbar .nav-menu .nav-ageless-link {
-  color: var(--color-primary, #5c4135) !important;
+  color: var(--color-accent, #9ac1c4) !important;
   font-weight: 700 !important;
   position: relative;
   padding-right: 0.35rem;
 }
 
 .navbar .nav-menu .nav-ageless-link:hover {
-  color: var(--color-accent, #aa8f80) !important;
+  color: var(--color-secondary, #aa8f80) !important;
 }
 
 .nav-ageless-new {
   position: absolute;
   top: -0.35rem;
   right: -1.75rem;
-  background: var(--color-link, #9ac1c4);
-  color: #fff;
+  background: var(--color-accent, #9ac1c4);
+  color: var(--color-button-secondary-text, #4e2c2c);
   font-size: 0.55rem;
   padding: 0.15rem 0.4rem;
   border-radius: 10px;
@@ -51,7 +51,7 @@
   display: inline-block;
   padding: 1rem clamp(1.25rem, 4vw, 2rem);
   background: var(--color-primary, #5c4135);
-  color: #fff !important;
+  color: var(--color-button-primary-text, #f3eee5) !important;
   font-family: var(--font-nav, 'Montserrat', sans-serif);
   font-size: clamp(0.9rem, 2.8vw, 1.05rem);
   font-weight: 600;
@@ -66,9 +66,9 @@
 }
 
 .ageless-hero-btn:hover {
-  background: var(--color-accent, #aa8f80) !important;
-  border-color: var(--color-accent, #aa8f80);
-  color: #fff !important;
+  background: var(--color-secondary, #aa8f80) !important;
+  border-color: var(--color-secondary, #aa8f80);
+  color: var(--color-button-primary-text, #f3eee5) !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 22px rgba(170, 143, 128, 0.35);
 }
@@ -118,7 +118,7 @@
   display: inline-block;
   padding: 0.65rem 1.5rem;
   background: var(--color-primary, #5c4135);
-  color: #fff !important;
+  color: var(--color-button-primary-text, #f3eee5) !important;
   border-radius: 50px;
   text-decoration: none;
   font-family: var(--font-nav, 'Montserrat', sans-serif);
@@ -129,9 +129,9 @@
 }
 
 .ageless-service-btn:hover {
-  background: var(--color-accent, #aa8f80);
-  border-color: var(--color-accent, #aa8f80);
-  color: #fff !important;
+  background: var(--color-secondary, #aa8f80);
+  border-color: var(--color-secondary, #aa8f80);
+  color: var(--color-button-primary-text, #f3eee5) !important;
 }
 
 .ageless-service-note {
@@ -185,7 +185,7 @@
   display: inline-block;
   padding: 0.875rem 2rem;
   background: var(--color-primary, #5c4135);
-  color: #fff !important;
+  color: var(--color-button-primary-text, #f3eee5) !important;
   border-radius: 50px;
   text-decoration: none;
   font-family: var(--font-nav, 'Montserrat', sans-serif);
@@ -196,9 +196,9 @@
 }
 
 .ageless-footer-btn:hover {
-  background: var(--color-accent, #aa8f80);
-  border-color: var(--color-accent, #aa8f80);
-  color: #fff !important;
+  background: var(--color-secondary, #aa8f80);
+  border-color: var(--color-secondary, #aa8f80);
+  color: var(--color-button-primary-text, #f3eee5) !important;
   transform: translateY(-1px);
 }
 
@@ -268,21 +268,22 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0.8rem 1rem;
-  background: var(--color-primary, #5c4135);
-  color: #fff !important;
+  background: var(--color-button-secondary-bg, #9ac1c4);
+  color: var(--color-button-secondary-text, #4e2c2c) !important;
   border-radius: 50px;
   text-decoration: none;
   font-family: var(--font-nav, 'Montserrat', sans-serif);
   font-weight: 600;
   font-size: 0.95rem;
-  border: 2px solid var(--color-primary, #5c4135);
-  transition: background 0.2s ease, border-color 0.2s ease;
+  border: 2px solid var(--color-button-secondary-bg, #9ac1c4);
+  transition: background 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
 }
 
 .ageless-popup-btn:hover {
-  background: var(--color-accent, #aa8f80) !important;
-  border-color: var(--color-accent, #aa8f80);
-  color: #fff !important;
+  background: var(--color-button-secondary-bg, #9ac1c4) !important;
+  border-color: var(--color-button-secondary-bg, #9ac1c4);
+  color: var(--color-button-secondary-text, #4e2c2c) !important;
+  filter: brightness(0.94);
 }
 
 /* Mobile bottom bar */
@@ -293,7 +294,7 @@
   left: 0;
   right: 0;
   z-index: 10050;
-  background: var(--color-surface, #fff);
+  background: var(--color-surface, #e8dccb);
   padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
   box-shadow: 0 -4px 20px rgba(92, 65, 53, 0.12);
   text-align: center;
@@ -306,21 +307,22 @@
   padding: 0.85rem 1rem;
   min-height: 48px;
   line-height: 1.3;
-  background: var(--color-primary, #5c4135);
-  color: #fff !important;
+  background: var(--color-button-secondary-bg, #9ac1c4);
+  color: var(--color-button-secondary-text, #4e2c2c) !important;
   border-radius: 50px;
   text-decoration: none;
   font-family: var(--font-nav, 'Montserrat', sans-serif);
   font-weight: 600;
   font-size: clamp(0.85rem, 3.5vw, 0.95rem);
-  border: 2px solid var(--color-primary, #5c4135);
-  transition: background 0.2s ease, border-color 0.2s ease;
+  border: 2px solid var(--color-button-secondary-bg, #9ac1c4);
+  transition: background 0.2s ease, border-color 0.2s ease, filter 0.2s ease;
 }
 
 .ageless-mobile-bar-link:hover {
-  background: var(--color-accent, #aa8f80) !important;
-  border-color: var(--color-accent, #aa8f80);
-  color: #fff !important;
+  background: var(--color-button-secondary-bg, #9ac1c4) !important;
+  border-color: var(--color-button-secondary-bg, #9ac1c4);
+  color: var(--color-button-secondary-text, #4e2c2c) !important;
+  filter: brightness(0.94);
 }
 
 @media (max-width: 768px) {
