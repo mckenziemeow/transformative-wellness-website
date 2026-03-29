@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
+# Machine-readable site summary for AI tools
+Allow: /llms.txt
+
 # Sitemap location
 Sitemap: https://transformativemedspa.com/sitemap.xml
 
@@ -14,6 +17,25 @@ Allow: /
 
 # Allow Bingbot full access
 User-agent: Bingbot
+Allow: /
+
+# AI / answer engines (allow crawling for discoverability in AI search)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 # Crawl-delay for slower bots (optional)

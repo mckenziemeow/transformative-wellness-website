@@ -1,22 +1,25 @@
 /**
- * Ageless AI (RepeatMD) — Transformative Wellness · Vista, CA only
- * Accents: #8B5CF6 → #EC4899
+ * Ageless AI (Transformative Wellness) — Vista, CA
+ * Styled to official TW brand palette (no purple/pink).
  */
 
+/* Nav — AI Treatment Advisor */
 .navbar .nav-menu .nav-ageless-link {
-  color: #7c3aed !important;
+  color: var(--color-primary, #5c4135) !important;
   font-weight: 700 !important;
   position: relative;
   padding-right: 0.35rem;
 }
+
 .navbar .nav-menu .nav-ageless-link:hover {
-  color: #6d28d9 !important;
+  color: var(--color-accent, #aa8f80) !important;
 }
+
 .nav-ageless-new {
   position: absolute;
   top: -0.35rem;
   right: -1.75rem;
-  background: #ec4899;
+  background: var(--color-link, #9ac1c4);
   color: #fff;
   font-size: 0.55rem;
   padding: 0.15rem 0.4rem;
@@ -25,6 +28,7 @@
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
+
 @media (max-width: 1024px) {
   .nav-ageless-new {
     right: auto;
@@ -35,147 +39,192 @@
   }
 }
 
+/* Hero — primary AI CTA */
 .ageless-hero-cta {
   text-align: center;
   margin: 1.25rem auto 1.5rem;
-  max-width: 36rem;
+  max-width: min(36rem, 100%);
+  padding: 0 0.5rem;
 }
+
 .ageless-hero-btn {
   display: inline-block;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  padding: 1rem clamp(1.25rem, 4vw, 2rem);
+  background: var(--color-primary, #5c4135);
   color: #fff !important;
-  font-size: 1.05rem;
+  font-family: var(--font-nav, 'Montserrat', sans-serif);
+  font-size: clamp(0.9rem, 2.8vw, 1.05rem);
   font-weight: 600;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid var(--color-primary, #5c4135);
+  box-shadow: 0 4px 18px rgba(92, 65, 53, 0.28);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  line-height: 1.35;
+  text-align: center;
+  max-width: 100%;
 }
+
 .ageless-hero-btn:hover {
+  background: var(--color-accent, #aa8f80) !important;
+  border-color: var(--color-accent, #aa8f80);
   color: #fff !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.45);
+  box-shadow: 0 6px 22px rgba(170, 143, 128, 0.35);
 }
+
 .ageless-hero-note {
   margin: 0.65rem 0 0;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(0.82rem, 2.5vw, 0.9rem);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.45;
 }
+
 .ageless-hero-note a {
-  color: #e9d5ff;
+  color: var(--color-link, #9ac1c4);
   font-weight: 600;
   text-decoration: underline;
 }
+
 .ageless-hero-note a:hover {
   color: #fff;
 }
 
+/* Service strip */
 .ageless-service-wrap {
   padding: 0 0 1.5rem;
   margin-top: -0.5rem;
 }
+
 .ageless-service-cta {
-  background: #f5f3ff;
+  background: var(--color-background, #f3eee5);
   border-radius: 12px;
   padding: 1.25rem 1.5rem;
   margin: 0 auto;
   max-width: 720px;
-  border-left: 4px solid #8b5cf6;
+  border: 1px solid var(--color-border, #d7c8bb);
+  border-left: 4px solid var(--color-primary, #5c4135);
   text-align: center;
 }
+
 .ageless-service-q {
   margin: 0 0 0.75rem;
   font-size: 1.05rem;
-  color: #1f2937;
+  color: var(--color-primary, #5c4135);
   font-weight: 600;
 }
+
 .ageless-service-btn {
   display: inline-block;
   padding: 0.65rem 1.5rem;
-  background: #8b5cf6;
+  background: var(--color-primary, #5c4135);
   color: #fff !important;
-  border-radius: 8px;
+  border-radius: 50px;
   text-decoration: none;
+  font-family: var(--font-nav, 'Montserrat', sans-serif);
   font-weight: 600;
   font-size: 0.95rem;
-  transition: background 0.2s ease;
+  border: 2px solid var(--color-primary, #5c4135);
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
+
 .ageless-service-btn:hover {
-  background: #7c3aed;
+  background: var(--color-accent, #aa8f80);
+  border-color: var(--color-accent, #aa8f80);
   color: #fff !important;
 }
+
 .ageless-service-note {
   margin: 0.65rem 0 0;
   font-size: 0.85rem;
-  color: #6b7280;
+  color: var(--color-text-muted, #c5b4a0);
   line-height: 1.5;
 }
 
+/* Footer Ageless block */
 .footer-ageless-cta {
   text-align: center;
   padding: 2rem 1.25rem;
-  background: #f5f3ff;
+  background: var(--color-card-bg, #d7c8bb);
   margin: 2rem 0 0;
   border-radius: 12px;
+  border: 1px solid var(--color-border, #d7c8bb);
   grid-column: 1 / -1;
 }
+
 .footer-ageless-cta h3 {
   margin: 0 0 0.5rem;
-  color: #1f2937;
+  color: var(--color-primary, #5c4135);
   font-size: 1.35rem;
 }
+
 .footer-ageless-cta > p {
   margin: 0 0 0.75rem;
-  color: #6b7280;
+  color: var(--color-primary, #5c4135);
+  opacity: 0.92;
   max-width: 520px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .footer-ageless-cta > p a {
-  color: #7c3aed;
+  color: var(--color-link, #9ac1c4);
   font-weight: 600;
 }
+
+.footer-ageless-cta > p a:hover {
+  color: var(--color-footer, #4e2c2c);
+}
+
 .footer-ageless-address {
   font-size: 0.9rem !important;
   margin-bottom: 1rem !important;
 }
+
 .ageless-footer-btn {
   display: inline-block;
   padding: 0.875rem 2rem;
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  background: var(--color-primary, #5c4135);
   color: #fff !important;
   border-radius: 50px;
   text-decoration: none;
+  font-family: var(--font-nav, 'Montserrat', sans-serif);
   font-weight: 600;
   font-size: 0.95rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.ageless-footer-btn:hover {
-  color: #fff !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.35);
+  border: 2px solid var(--color-primary, #5c4135);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
+.ageless-footer-btn:hover {
+  background: var(--color-accent, #aa8f80);
+  border-color: var(--color-accent, #aa8f80);
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+/* Popup */
 .ageless-popup {
   display: none;
   position: fixed;
   bottom: 1.25rem;
   right: 1.25rem;
   z-index: 10060;
-  background: #fff;
+  background: var(--color-background, #f3eee5);
   border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(92, 65, 53, 0.1);
   padding: 1.5rem 1.25rem 1.25rem;
   max-width: 380px;
-  width: calc(100vw - 2.5rem);
-  border: 2px solid #8b5cf6;
+  width: calc(100vw - 2rem);
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  border: 1px solid var(--color-border, #d7c8bb);
   box-sizing: border-box;
 }
+
 .ageless-popup.ageless-popup--visible {
   display: block;
 }
+
 .ageless-popup-close {
   position: absolute;
   top: 0.35rem;
@@ -185,41 +234,58 @@
   font-size: 1.35rem;
   line-height: 1;
   cursor: pointer;
-  color: #9ca3af;
+  color: var(--color-primary, #5c4135);
   padding: 0.25rem;
+  border-radius: 4px;
 }
+
 .ageless-popup-close:hover {
-  color: #4b5563;
+  color: var(--color-footer, #4e2c2c);
 }
+
+.ageless-popup-close:focus-visible {
+  outline: 2px solid var(--color-link, #9ac1c4);
+  outline-offset: 2px;
+}
+
 .ageless-popup-title {
   margin: 0 0 0.5rem;
   padding-right: 1.5rem;
   font-size: 1.1rem;
-  color: #1f2937;
+  color: var(--color-primary, #5c4135);
 }
+
 .ageless-popup-text {
   margin: 0 0 1rem;
-  color: #6b7280;
+  color: var(--color-text-muted, #c5b4a0);
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
 .ageless-popup-btn {
   display: block;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 0.75rem 1rem;
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  padding: 0.8rem 1rem;
+  background: var(--color-primary, #5c4135);
   color: #fff !important;
   border-radius: 50px;
   text-decoration: none;
+  font-family: var(--font-nav, 'Montserrat', sans-serif);
   font-weight: 600;
   font-size: 0.95rem;
+  border: 2px solid var(--color-primary, #5c4135);
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
+
 .ageless-popup-btn:hover {
+  background: var(--color-accent, #aa8f80) !important;
+  border-color: var(--color-accent, #aa8f80);
   color: #fff !important;
 }
 
+/* Mobile bottom bar */
 .ageless-mobile-bar {
   display: none;
   position: fixed;
@@ -227,22 +293,33 @@
   left: 0;
   right: 0;
   z-index: 10050;
-  background: #fff;
+  background: var(--color-surface, #fff);
   padding: 0.65rem 1rem calc(0.65rem + env(safe-area-inset-bottom));
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 -4px 20px rgba(92, 65, 53, 0.12);
   text-align: center;
 }
+
 .ageless-mobile-bar-link {
-  display: block;
-  padding: 0.75rem 1rem;
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  min-height: 48px;
+  line-height: 1.3;
+  background: var(--color-primary, #5c4135);
   color: #fff !important;
   border-radius: 50px;
   text-decoration: none;
+  font-family: var(--font-nav, 'Montserrat', sans-serif);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 3.5vw, 0.95rem);
+  border: 2px solid var(--color-primary, #5c4135);
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
+
 .ageless-mobile-bar-link:hover {
+  background: var(--color-accent, #aa8f80) !important;
+  border-color: var(--color-accent, #aa8f80);
   color: #fff !important;
 }
 
@@ -250,7 +327,26 @@
   .ageless-mobile-bar {
     display: block;
   }
+
   body {
     padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+  }
+
+  .ageless-popup {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: calc(100vw - 1.5rem);
+    bottom: calc(5rem + env(safe-area-inset-bottom));
+  }
+
+  .ageless-popup.ageless-popup--visible {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 380px) {
+  .ageless-hero-btn {
+    padding: 0.9rem 1.1rem;
   }
 }

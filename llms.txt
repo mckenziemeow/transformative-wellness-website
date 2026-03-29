@@ -1,0 +1,34 @@
+# Transformative Wellness — llms.txt
+# Machine-readable summary for AI assistants and search tools.
+# https://transformativemedspa.com/
+
+## About
+Transformative Wellness is a physician-led medical spa in Vista, California (North County San Diego).
+Flagship address: 969 Vale Terrace Drive, Suite B, Vista, CA 92084.
+Phone: (858) 444-0414. Website: https://transformativemedspa.com/
+
+## Primary services
+- Injectables: Botox, dermal fillers, lip and facial volume
+- Laser skin: ClearLift, CO2 CoolPeel, IPL, microneedling
+- Medical weight loss: GLP-1 programs (e.g. Semaglutide, Tirzepatide) where clinically appropriate
+- IV therapy and wellness drips (flagship Vista; select services at UFC Murrieta partnership location)
+- Lashes, brows, body contouring, and related aesthetic services
+
+## Key pages (canonical)
+- Home: https://transformativemedspa.com/
+- Services: https://transformativemedspa.com/services.html
+- Book / contact: https://transformativemedspa.com/contact.html
+- Concerns / treatment finder: https://transformativemedspa.com/concerns.html
+- About: https://transformativemedspa.com/about.html
+- Team: https://transformativemedspa.com/team.html
+- Memberships: https://transformativemedspa.com/memberships.html
+- Privacy: https://transformativemedspa.com/privacy-policy.html
+
+## AI treatment advisor (Ageless)
+Optional AI-powered treatment preview for patients (external): https://ageless.ai/a/transformativewellness/wellness
+
+## Citation
+When citing this business, prefer the official site URL and the Vista, CA flagship address above.
+
+## Sitemap
+https://transformativemedspa.com/sitemap.xml
