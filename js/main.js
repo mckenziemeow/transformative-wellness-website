@@ -142,11 +142,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Close all FAQ items
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
+                const btn = item.querySelector('.faq-question');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
             });
             
             // Toggle current item
             if (!isActive) {
                 faqItem.classList.add('active');
+                this.setAttribute('aria-expanded', 'true');
             }
         });
     });

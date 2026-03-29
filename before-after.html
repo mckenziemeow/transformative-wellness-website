@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/ageless.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Serif+Text:ital@0;1&family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js" crossorigin="anonymous"></script>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-12N8MNT8PX"></script>
     <script>
@@ -86,25 +88,29 @@
             <button class="mobile-toggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
+            <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary nav-mobile-pill">Book</a>
             <ul class="nav-menu">
                 <li class="dropdown">
                     <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
+                        <li class="dropdown-heading">By treatment</li>
                         <li><a href="injectables.html">Injectables</a></li>
-                        <li><a href="skin-laser.html">Skin & Laser</a></li>
-                        <li><a href="body-weight.html">Body & Weight</a></li>
+                        <li><a href="skin-laser.html">Skin &amp; Laser</a></li>
+                        <li><a href="body-weight.html">Body &amp; Weight</a></li>
                         <li><a href="iv-therapy.html">IV Therapy</a></li>
-                        <li><a href="lashes-smooth.html">Lashes & Smooth</a></li>
+                        <li><a href="lashes-smooth.html">Lashes &amp; Smooth</a></li>
+                        <li class="dropdown-heading dropdown-heading-spaced">By goal</li>
+                        <li><a href="concerns.html">Concerns</a></li>
+                        <li><a href="https://ageless.ai/a/transformativewellness/transformation" target="_blank" rel="noopener noreferrer">AI Treatment Advisor</a></li>
                     </ul>
                 </li>
-                <li><a href="concerns.html">Concerns</a></li>
-                <li><a href="before-after.html">Before & After</a></li>
+                <li><a href="before-after.html">Results</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="https://ageless.ai/a/transformativewellness/transformation" class="nav-ageless-link" target="_blank" rel="noopener noreferrer">AI Treatment Advisor<span class="nav-ageless-new" aria-hidden="true">NEW</span></a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="nav-tel-inline"><a href="tel:+18584440414"><i class="fas fa-phone" aria-hidden="true"></i> (858) 444-0414</a></li>
             </ul>
-            <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary nav-cta">Book online</a>
+            <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary nav-cta nav-cta-book">Book Now</a>
         </div>
     </nav>
 
@@ -117,23 +123,62 @@
         </div>
     </section>
 
-    <!-- Coming Soon Section -->
-    <section class="coming-soon-section">
+    <!-- Interactive before / after gallery -->
+    <section class="section-linen" style="padding: var(--spacing-3xl) 0;">
         <div class="container">
-            <div class="coming-soon-content">
-                <div class="coming-soon-icon">
-                    <i class="fas fa-camera"></i>
-                </div>
-                <h2>Gallery Coming Soon</h2>
-                <p>We're currently collecting before and after photos from our wonderful patients with their consent. Real patient transformations will be displayed here soon.</p>
-                <p class="coming-soon-note"><i class="fas fa-shield-alt"></i> All photos are shared with written patient consent and comply with HIPAA privacy regulations.</p>
-                
-                <div class="coming-soon-cta">
-                    <h3>Want to Share Your Results?</h3>
-                    <p>If you're a current patient and would like to share your transformation, please let us know during your next visit. Your story could inspire others on their aesthetic journey.</p>
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                </div>
+            <p class="home-ba-note" style="max-width: 46rem; margin-bottom: var(--spacing-xl);">
+                <strong>Illustrative gallery:</strong> Drag the handle on each pair to compare. Images are representative of treatment categories — replace with your HIPAA-consented patient photos anytime. Individual results vary.
+            </p>
+            <div class="gallery-ba-grid">
+                <figure class="home-ba-figure">
+                    <img-comparison-slider>
+                        <img slot="first" src="images/services/injectables.jpg" alt="Before — injectable treatment planning" loading="lazy" decoding="async">
+                        <img slot="second" src="images/services/facial-treatment.jpg" alt="After — refreshed appearance" loading="lazy" decoding="async">
+                    </img-comparison-slider>
+                    <figcaption>Injectables · illustrative</figcaption>
+                </figure>
+                <figure class="home-ba-figure">
+                    <img-comparison-slider>
+                        <img slot="first" src="images/services/skin-care.jpg" alt="Before skin texture" loading="lazy" decoding="async">
+                        <img slot="second" src="images/services/skin-rejuvenation.jpg" alt="After rejuvenation" loading="lazy" decoding="async">
+                    </img-comparison-slider>
+                    <figcaption>Skin quality · illustrative</figcaption>
+                </figure>
+                <figure class="home-ba-figure">
+                    <img-comparison-slider>
+                        <img slot="first" src="images/services/laser-treatment.jpg" alt="Before laser course" loading="lazy" decoding="async">
+                        <img slot="second" src="images/services/microneedling.jpg" alt="After laser / microneedling" loading="lazy" decoding="async">
+                    </img-comparison-slider>
+                    <figcaption>Laser &amp; texture · illustrative</figcaption>
+                </figure>
+                <figure class="home-ba-figure">
+                    <img-comparison-slider>
+                        <img slot="first" src="images/services/age-defying.jpg" alt="Before anti-aging protocol" loading="lazy" decoding="async">
+                        <img slot="second" src="images/services/womens-care.jpg" alt="After protocol" loading="lazy" decoding="async">
+                    </img-comparison-slider>
+                    <figcaption>Anti-aging facials · illustrative</figcaption>
+                </figure>
+                <figure class="home-ba-figure">
+                    <img-comparison-slider>
+                        <img slot="first" src="images/services/weight-loss.jpg" alt="Before body composition focus" loading="lazy" decoding="async">
+                        <img slot="second" src="images/services/prp-treatment.jpg" alt="After wellness-focused care" loading="lazy" decoding="async">
+                    </img-comparison-slider>
+                    <figcaption>Wellness &amp; body · illustrative</figcaption>
+                </figure>
+                <figure class="home-ba-figure">
+                    <img-comparison-slider>
+                        <img slot="first" src="images/services/iv-therapy.jpg" alt="Before — tired skin / stress" loading="lazy" decoding="async">
+                        <img slot="second" src="images/services/lashes.jpg" alt="After — glow &amp; finishing services" loading="lazy" decoding="async">
+                    </img-comparison-slider>
+                    <figcaption>IV glow + finishing · illustrative</figcaption>
+                </figure>
             </div>
+            <div class="text-center" style="margin-top: var(--spacing-2xl);">
+                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary btn-large">Book consultation to see more results</a>
+            </div>
+            <p class="text-center" style="margin-top: var(--spacing-md); font-size: 0.85rem; color: var(--color-text-light);">
+                Want your results featured? Ask your provider about photo consent at your next visit.
+            </p>
         </div>
     </section>
 
