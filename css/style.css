@@ -6788,3 +6788,20 @@ img-comparison-slider {
         color: var(--color-accent);
     }
 }
+
+/* Phase 5 — mobile touch targets (48px minimum) */
+@media (max-width: 768px) {
+    .nav-mobile-pill,
+    .nav-cta-book {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reach-strip-link,
+    .cta-buttons .btn,
+    .hero-buttons .btn {
+        min-height: 48px;
+    }
+}
