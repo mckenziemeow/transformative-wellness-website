@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Transformative Wellness | Vista's Premier Medical Spa</title>
     <meta name="description" content="Expert aesthetic treatments in Vista, CA. Botox, fillers, weight loss, laser treatments, IV therapy. Book your consultation today.">
     <link rel="canonical" href="https://transformativemedspa.com/">
@@ -10,6 +10,7 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://www.google-analytics.com">
     
@@ -328,7 +329,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ageless.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Serif+Text:ital@0;1&family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-12N8MNT8PX"></script>
@@ -438,24 +440,23 @@
     <!-- Main Content -->
     <main id="main-content">
     
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-video-wrapper">
-            <video 
-                class="hero-video" 
-                autoplay 
-                muted 
-                loop 
-                playsinline
-                poster="images/lobby/lobby-reception-new.jpg"
+    <!-- HERO SECTION — static lobby image + warm brand gradient (no video = faster LCP on mobile) -->
+    <section class="hero hero--welcome" aria-labelledby="hero-heading">
+        <div class="hero-visual" aria-hidden="true">
+            <img
+                class="hero-bg-image"
+                src="images/lobby/lobby-reception-new.jpg"
+                alt=""
+                width="1920"
+                height="1080"
+                fetchpriority="high"
+                decoding="async"
             >
-                <source src="videos/hero.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
+            <div class="hero-gradient-overlay"></div>
         </div>
 
         <div class="hero-content">
-            <h1 class="hero-title">
+            <h1 id="hero-heading" class="hero-title">
                 <span>Look Good.</span>
                 <span>Feel Great.</span>
                 <span class="accent">Live Better.</span>
@@ -463,14 +464,11 @@
 
             <p class="hero-subtitle">Vista, CA medical spa — Botox &amp; fillers, laser skin treatments, medical weight loss, IV therapy &amp; more. Natural-looking results with a board-certified team.</p>
 
-            <div class="ageless-hero-cta">
-                <a href="https://ageless.ai/a/transformativewellness/wellness" class="ageless-hero-btn" target="_blank" rel="noopener noreferrer">✨ Discover Your Perfect Treatment — Try Our AI Advisor</a>
-                <p class="ageless-hero-note">Free AI-powered treatment assessment · See your preview in minutes · Vista, CA · Free consultations <a href="tel:8584440414">(858) 444-0414</a></p>
-            </div>
+            <p class="hero-supporting">Complimentary consultations · <a href="tel:8584440414">(858) 444-0414</a></p>
 
             <div class="hero-buttons">
-                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary">Book online</a>
-                <a href="concerns.html" class="btn btn-secondary">Explore treatments</a>
+                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary">Book a Free Consultation</a>
+                <a href="https://ageless.ai/a/transformativewellness/wellness" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">See Your AI Treatment Preview</a>
             </div>
         </div>
     </section>

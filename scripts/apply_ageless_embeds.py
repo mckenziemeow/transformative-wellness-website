@@ -159,7 +159,7 @@ def add_service_strip(text: str, path: Path) -> str:
 
 
 def add_hero_index(text: str, path: Path) -> str:
-    if path.name != "index.html" or "ageless-hero-cta" in text:
+    if path.name != "index.html" or "ageless-hero-cta" in text or "hero--welcome" in text:
         return text
     old = """            <p class="hero-subtitle">Natural results from board-certified experts in Vista, CA</p>
 
