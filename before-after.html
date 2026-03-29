@@ -129,52 +129,88 @@
             <p class="home-ba-note" style="max-width: 46rem; margin-bottom: var(--spacing-xl);">
                 <strong>Illustrative gallery:</strong> Drag the handle on each pair to compare. Images are representative of treatment categories — replace with your HIPAA-consented patient photos anytime. Individual results vary.
             </p>
+            <div class="ba-filter-tabs" role="tablist" aria-label="Filter results by category">
+                <button type="button" class="ba-tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+                <button type="button" class="ba-tab" role="tab" aria-selected="false" data-filter="injectables">Injectables</button>
+                <button type="button" class="ba-tab" role="tab" aria-selected="false" data-filter="skin">Skin</button>
+                <button type="button" class="ba-tab" role="tab" aria-selected="false" data-filter="body">Body</button>
+            </div>
             <div class="gallery-ba-grid">
-                <figure class="home-ba-figure">
-                    <img-comparison-slider>
-                        <img slot="first" src="images/services/injectables.jpg" alt="Before — injectable treatment planning" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/facial-treatment.jpg" alt="After — refreshed appearance" loading="lazy" decoding="async">
-                    </img-comparison-slider>
-                    <figcaption>Injectables · illustrative</figcaption>
-                </figure>
-                <figure class="home-ba-figure">
-                    <img-comparison-slider>
-                        <img slot="first" src="images/services/skin-care.jpg" alt="Before skin texture" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/skin-rejuvenation.jpg" alt="After rejuvenation" loading="lazy" decoding="async">
-                    </img-comparison-slider>
-                    <figcaption>Skin quality · illustrative</figcaption>
-                </figure>
-                <figure class="home-ba-figure">
-                    <img-comparison-slider>
-                        <img slot="first" src="images/services/laser-treatment.jpg" alt="Before laser course" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/microneedling.jpg" alt="After laser / microneedling" loading="lazy" decoding="async">
-                    </img-comparison-slider>
-                    <figcaption>Laser &amp; texture · illustrative</figcaption>
-                </figure>
-                <figure class="home-ba-figure">
-                    <img-comparison-slider>
-                        <img slot="first" src="images/services/age-defying.jpg" alt="Before anti-aging protocol" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/womens-care.jpg" alt="After protocol" loading="lazy" decoding="async">
-                    </img-comparison-slider>
-                    <figcaption>Anti-aging facials · illustrative</figcaption>
-                </figure>
-                <figure class="home-ba-figure">
-                    <img-comparison-slider>
-                        <img slot="first" src="images/services/weight-loss.jpg" alt="Before body composition focus" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/prp-treatment.jpg" alt="After wellness-focused care" loading="lazy" decoding="async">
-                    </img-comparison-slider>
-                    <figcaption>Wellness &amp; body · illustrative</figcaption>
-                </figure>
-                <figure class="home-ba-figure">
-                    <img-comparison-slider>
-                        <img slot="first" src="images/services/iv-therapy.jpg" alt="Before — tired skin / stress" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/lashes.jpg" alt="After — glow &amp; finishing services" loading="lazy" decoding="async">
-                    </img-comparison-slider>
-                    <figcaption>IV glow + finishing · illustrative</figcaption>
-                </figure>
+                <div class="gallery-ba-item home-ba-figure" data-category="injectables">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/injectables.jpg" alt="Before — injectable treatment planning" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/facial-treatment.jpg" alt="After — refreshed appearance" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Injectables · illustrative</figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-ba-item home-ba-figure" data-category="injectables">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/age-defying.jpg" alt="Before — upper face" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/injectables.jpg" alt="After — balanced refresh" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Neuromodulator · illustrative</figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-ba-item home-ba-figure" data-category="skin">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/skin-care.jpg" alt="Before skin texture" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/skin-rejuvenation.jpg" alt="After rejuvenation" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Skin quality · illustrative</figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-ba-item home-ba-figure" data-category="skin">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/laser-treatment.jpg" alt="Before laser course" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/microneedling.jpg" alt="After laser / microneedling" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Laser &amp; texture · illustrative</figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-ba-item home-ba-figure" data-category="skin">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/facial-treatment.jpg" alt="Before facial series" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/age-defying.jpg" alt="After facial series" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Facial renewal · illustrative</figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-ba-item home-ba-figure" data-category="body">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/weight-loss.jpg" alt="Before body composition focus" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/prp-treatment.jpg" alt="After wellness-focused care" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Wellness &amp; body · illustrative</figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-ba-item home-ba-figure" data-category="body">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/womens-care.jpg" alt="Before contour goals" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/weight-loss.jpg" alt="After program support" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Body program · illustrative</figcaption>
+                    </figure>
+                </div>
+                <div class="gallery-ba-item home-ba-figure" data-category="skin">
+                    <figure style="margin:0;">
+                        <img-comparison-slider>
+                            <img slot="first" src="images/services/iv-therapy.jpg" alt="Before — tired skin / stress" loading="lazy" decoding="async">
+                            <img slot="second" src="images/services/lashes.jpg" alt="After — glow &amp; finishing services" loading="lazy" decoding="async">
+                        </img-comparison-slider>
+                        <figcaption>Glow + finishing · illustrative</figcaption>
+                    </figure>
+                </div>
             </div>
             <div class="text-center" style="margin-top: var(--spacing-2xl);">
-                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary btn-large">Book consultation to see more results</a>
+                <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-primary btn-large">See Your Transformation → Book Consultation</a>
             </div>
             <p class="text-center" style="margin-top: var(--spacing-md); font-size: 0.85rem; color: var(--color-text-light);">
                 Want your results featured? Ask your provider about photo consent at your next visit.
@@ -301,6 +337,7 @@
         <a href="https://ageless.ai/a/transformativewellness/transformation" class="ageless-mobile-bar-link" target="_blank" rel="noopener noreferrer">See Your AI Treatment Preview →</a>
     </div>
 
+    <script src="js/ba-gallery.js" defer></script>
     <script src="js/ageless.js" defer></script>
     <script src="js/main.js"></script>
 </body>
