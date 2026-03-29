@@ -1,6 +1,7 @@
-# Cloudflare Pages — deploy from repo root:
-#   npx wrangler pages deploy . --project-name=transformative-wellness
-# account_id: Cloudflare account that owns the Pages project (GitHub Action can override via CLOUDFLARE_ACCOUNT_ID secret).
-account_id = "b41e46fccab22132d9b8a6832882ed5c"
+# Cloudflare Workers Static Assets — deploy from repo root
+# Replaces the deprecated Cloudflare Pages approach.
 name = "transformative-wellness"
-compatibility_date = "2024-01-01"
+compatibility_date = "2026-03-28"
+
+[assets]
+directory = "."
