@@ -22,7 +22,7 @@
 ### 2. **GHL Chat Widget** ✅
 - **Location:** Homepage (`index.html`)
 - **Status:** ACTIVE
-- **Appearance:** Branded with your colors (#c9a86c gold)
+- **Appearance:** Branded with the site embed — Primary `#5c4135` (Deep Cocoa), Secondary `#9ac1c4` (Ocean Mist); match these in GHL Chat Widget settings.
 - **Features:**
   - Welcome message: "Hi there! 👋 How can we help you today?"
   - Sub-heading: "We typically reply within minutes"

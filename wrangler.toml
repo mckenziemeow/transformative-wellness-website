@@ -1,5 +1,6 @@
-# Cloudflare Pages — manual deploy from repo root:
+# Cloudflare Pages — deploy from repo root:
 #   npx wrangler pages deploy . --project-name=transformative-wellness
-# Use CLOUDFLARE_ACCOUNT_ID from `wrangler whoami` (must match the logged-in account).
+# account_id: Cloudflare account that owns the Pages project (GitHub Action can override via CLOUDFLARE_ACCOUNT_ID secret).
+account_id = "b41e46fccab22132d9b8a6832882ed5c"
 name = "transformative-wellness"
 compatibility_date = "2024-01-01"

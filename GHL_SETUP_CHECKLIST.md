@@ -13,8 +13,8 @@
 
 ### Widget Appearance
 - [ ] Enable "Webchat Widget"
-- [ ] Primary Color: `#c9a86c` (gold)
-- [ ] Secondary Color: `#1a1a1a` (dark)
+- [ ] Primary Color: `#5c4135` (Deep Cocoa — matches website chat embed)
+- [ ] Secondary Color: `#9ac1c4` (Ocean Mist — matches website accent)
 - [ ] Widget Position: Bottom Right
 - [ ] Show Avatar: YES
 - [ ] Upload avatar image (logo or team photo)

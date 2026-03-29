@@ -14,7 +14,7 @@ Your chat widget is live on the website. Now you need to configure the conversat
 - Welcome message: "Hi there! 👋 How can we help you today?"
 - Heading: "Transformative Wellness"
 - Sub-heading: "We typically reply within minutes"
-- Colors: Gold (#c9a86c) and Dark (#1a1a1a)
+- Colors (match HTML embed): Primary `#5c4135` (Deep Cocoa), Secondary `#9ac1c4` (Ocean Mist)
 - Avatar: Enabled
 - Location ID: tk_5d18d5afd6104cd28cf7658e6aba2307
 
@@ -526,8 +526,8 @@ https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=
 4. Enable "Webchat Widget"
 
 ### Step 2: Configure Widget Appearance
-- **Primary Color:** #c9a86c (gold)
-- **Secondary Color:** #1a1a1a (dark)
+- **Primary Color:** `#5c4135` (Deep Cocoa)
+- **Secondary Color:** `#9ac1c4` (Ocean Mist)
 - **Widget Position:** Bottom Right
 - **Welcome Message:** "Hi there! 👋 How can we help you today?"
 - **Team Name:** Transformative Wellness
