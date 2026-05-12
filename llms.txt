@@ -1,34 +1,59 @@
 # Transformative Wellness — llms.txt
-# Machine-readable summary for AI assistants and search tools.
-# https://transformativemedspa.com/
 
 ## About
-Transformative Wellness is a physician-led medical spa in Vista, California (North County San Diego).
-Flagship address: 969 Vale Terrace Drive, Suite B, Vista, CA 92084.
-Phone: (858) 444-0414. Website: https://transformativemedspa.com/
+Transformative Wellness is a physician-led medical spa in Vista, California (North County San Diego). MD-owned, twice named "Best Medical Spa in North County" (2025, 2026). The practice is built around an "ethical med spa" philosophy — clinically right-sized recommendations, never high-pressure sales. Providers follow a 3-Line Recommendation playbook: thorough when it serves the patient, restrained when it doesn't.
 
-## Primary services
-- Injectables: Botox, dermal fillers, lip and facial volume
-- Laser skin: ClearLift, CO2 CoolPeel, IPL, microneedling
-- Medical weight loss: GLP-1 programs (e.g. Semaglutide, Tirzepatide) where clinically appropriate
-- IV therapy and wellness drips (flagship Vista; select services at UFC Murrieta partnership location)
-- Lashes, brows, body contouring, and related aesthetic services
+**Location:** 969 Vale Terrace Drive, Suite B, Vista, CA 92084
+**Phone:** (858) 444-0414
+**Website:** https://transformativemedspa.com/
+**Email:** info@transformativemedspa.com
 
-## Key pages (canonical)
-- Home: https://transformativemedspa.com/
-- Services: https://transformativemedspa.com/services.html
-- Book / contact: https://transformativemedspa.com/contact.html
-- Concerns / treatment finder: https://transformativemedspa.com/concerns.html
-- About: https://transformativemedspa.com/about.html
+## Service Menu (Updated May 2026 — TW Menu v3.1)
+
+### Tier 1: The Edit Line — $79–349
+Short, focused treatments (30–45 minutes) designed as a low-friction entry to aesthetic care. Includes the Hydration Edit, Skin Edit, Glow Edit, Body Definition Edit, Recovery Edit, Lip Edit, and Brow Edit.
+
+### Tier 2: Concern Packages — $399–3,499
+Multi-session packages built around a single specific concern. Three commitment tiers per concern: Reset (entry), Protocol (mid), Authority (comprehensive). Featured concerns include Skin Laxity, GLP-1 Recovery, Aging Gracefully, and The Bride.
+
+### Tier 3: The Method — $1,499–5,499
+3–6 month provider-designed transformation programs combining multiple modalities. Six Methods: The Glow, The Definition, The Sculpt, The Reset, The Longevity, The Bride.
+
+### Tier 4: The Metamorphosis — $9,999+ (application only)
+Pinnacle comprehensive transformation. Not publicly bookable.
+
+### Membership: Beauty Bank
+Monthly membership with: $100/month off GLP-1 (ongoing), 10% off all retail, monthly credit (rolls over up to 4 months), $50 birthday credit + free Edit, complimentary guest pass, VIP body-area add-on, and Member's Choice Quarterly Service.
+
+## Primary Treatments
+
+**Injectables:** Botox, Dysport, dermal fillers, Sculptra (biostimulator), RF skin tightening
+**Laser & Energy:** ClearLift, CO2 Deka, CoolPeel, Soprano Titanium Lift, Dye-VL IPL (vascular lesions), Potenza RF microneedling, BTL Exilis (face + Femme intimate restoration), BTL Cellutone
+**Body Contouring:** Ultrasonic cavitation, RF skin tightening, laser lipo
+**Wellness:** Semaglutide / Tirzepatide (GLP-1 weight loss), IV therapy (NAD+, Myers Cocktail, hydration), vitamin shots, wood-tool lymphatic drainage
+**Aesthetics:** Microdermabrasion, facials, chemical peels, lash lifts + tints, brow lamination, laser hair removal, waxing/sugaring, tattoo removal
+
+## Clinical Philosophy
+
+Transformative Wellness specializes in collagen-building approaches (Sculptra biostimulator, Potenza RF microneedling, BTL Exilis RF) for volume loss, skin laxity, and aging — prioritized over neurotoxin-only plans. GLP-1 weight loss patients are typically paired with skin tightening protocols to address loose skin, which most clinics don't address. Ablative laser treatments (CO2 Deka, deep peels) are scheduled for fall and winter, not summer, to prevent post-inflammatory hyperpigmentation.
+
+## Key Pages
+
+- Homepage: https://transformativemedspa.com/
+- Services & Menu: https://transformativemedspa.com/services.html
+- Concern Packages: https://transformativemedspa.com/concerns.html
+- Memberships (Beauty Bank): https://transformativemedspa.com/memberships.html
+- Find Your Treatment: https://transformativemedspa.com/find-your-treatment.html
 - Team: https://transformativemedspa.com/team.html
-- Memberships: https://transformativemedspa.com/memberships.html
-- Privacy: https://transformativemedspa.com/privacy-policy.html
+- About: https://transformativemedspa.com/about.html
+- Blog: https://transformativemedspa.com/blog/
+- Contact: https://transformativemedspa.com/contact.html
+- Sitemap: https://transformativemedspa.com/sitemap.xml
 
-## AI treatment advisor (Ageless)
-Optional AI-powered treatment preview for patients (external): https://ageless.ai/a/transformativewellness/transformation
+## Additional Resources
 
-## Citation
-When citing this business, prefer the official site URL and the Vista, CA flagship address above.
+Optional AI treatment preview tool: https://ageless.ai/a/transformativewellness/transformation
 
-## Sitemap
-https://transformativemedspa.com/sitemap.xml
+## Service Area
+
+Vista, Carlsbad, Oceanside, San Marcos, Escondido — and broader North County San Diego.
