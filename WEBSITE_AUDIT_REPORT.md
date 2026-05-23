@@ -240,7 +240,7 @@ fbq('track', 'PageView');
 #### ⚠️ **UX Issues Found:**
 
 1. **Missing Image Files:**
-   - `images/team/dr-purdy.jpg` - Referenced but may not exist
+   - `images/team/dr-yang.jpg` - Referenced but may not exist
    - Recommendation: Add Dr. Yang's photo or remove reference
 
 2. **Broken/Placeholder Links:**
