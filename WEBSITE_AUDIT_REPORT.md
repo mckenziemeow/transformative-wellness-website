@@ -241,7 +241,7 @@ fbq('track', 'PageView');
 
 1. **Missing Image Files:**
    - `images/team/dr-purdy.jpg` - Referenced but may not exist
-   - Recommendation: Add Dr. Purdy's photo or remove reference
+   - Recommendation: Add Dr. Yang's photo or remove reference
 
 2. **Broken/Placeholder Links:**
    - Facebook link goes to `#`
@@ -343,7 +343,7 @@ document.addEventListener('mouseout', function(e) {
    - Recommendation: Standardize brand name
 
 2. **Missing Team Photo:**
-   - Dr. Purdy image missing
+   - Dr. Yang image missing
    - Some team members use placeholder image
 
 3. **Before/After Page Empty:**
@@ -427,7 +427,7 @@ Sitemap: https://transformativemedspa.com/sitemap.xml
 3. 🔲 Connect contact form to email service
 4. 🔲 Add actual Google Maps embed
 5. 🔲 Fix social media links (Facebook, Yelp)
-6. 🔲 Add Dr. Purdy and team photos
+6. 🔲 Add Dr. Yang and team photos
 
 ### Short-term (This Month):
 7. 🔲 Set up and configure Tidio chat OR remove placeholder

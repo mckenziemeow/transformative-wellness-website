@@ -37,7 +37,7 @@ Vista, CA 92084
 ## 👥 Team Members
 
 ### Medical Director
-**Dr. Laura Purdy, MD**
+**Dr. Joshua Yang, MD**
 - Oversees all medical protocols
 - Ensures highest standards of patient care
 - 15+ years experience in aesthetic medicine
@@ -355,7 +355,7 @@ All IV sessions take 45-60 minutes. Book online or walk-in (appointment recommen
 - HSA/FSA cards accepted for medical services
 
 ### Safety & Credentials
-- All treatments supervised by Medical Director Dr. Laura Purdy, MD
+- All treatments supervised by Medical Director Dr. Joshua Yang, MD
 - Board-certified nurses and licensed aestheticians
 - FDA-approved products and devices only
 - Strict sanitation protocols

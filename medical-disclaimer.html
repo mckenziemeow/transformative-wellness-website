@@ -69,7 +69,10 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Transformative Wellness" class="logo-img">
+                <picture>
+                    <source type="image/webp" srcset="images/logo.webp">
+                    <img src="images/logo.png" alt="Transformative Wellness" class="logo-img" decoding="async">
+                </picture>
             </a>
             <button class="mobile-toggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
@@ -148,7 +151,7 @@
 
                 <div class="legal-section">
                     <h2>Medical Supervision</h2>
-                    <p>All medical services at Transformative Wellness are performed under the supervision of our Medical Director, Dr. Laura Purdy, MD. However, individual treatments may be performed by licensed healthcare professionals including registered nurses and licensed aestheticians working within their scope of practice.</p>
+                    <p>All medical services at Transformative Wellness are performed under the supervision of our Medical Director, Dr. Joshua Yang, MD. However, individual treatments may be performed by licensed healthcare professionals including registered nurses and licensed aestheticians working within their scope of practice.</p>
                 </div>
 
                 <div class="legal-section">
@@ -242,6 +245,7 @@
                         <li><a href="before-after.html">Results</a></li>
                         <li><a href="memberships.html">Memberships</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="locations/vista.html">Vista location</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -261,10 +265,13 @@
                     <p><i class="fas fa-phone"></i> <a href="tel:+18584440414">(858) 444-0414</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:info@transformativemedspa.com">info@transformativemedspa.com</a></p>
                     <ul class="footer-hours">
-                        <li><strong>Mon</strong> 9am – 6pm</li>
-                        <li><strong>Wed</strong> 9am – 6pm</li>
-                        <li><strong>Fri</strong> 9am – 6pm</li>
-                        <li><strong>Sat</strong> 9am – 4pm</li>
+                        <li><strong>Mon</strong> 10am – 7pm</li>
+                        <li><strong>Tue</strong> Closed</li>
+                        <li><strong>Wed</strong> 10am – 7pm</li>
+                        <li><strong>Thu</strong> 10am – 7pm</li>
+                        <li><strong>Fri</strong> 10am – 7pm</li>
+                        <li><strong>Sat</strong> 10am – 4pm</li>
+                        <li><strong>Sun</strong> Closed</li>
                     </ul>
                     <iframe class="footer-map-embed" title="Transformative Wellness on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=969+Vale+Terrace+Dr+Suite+B+Vista+CA+92084&amp;hl=en&amp;z=14&amp;output=embed"></iframe>
                 </div>
@@ -296,16 +303,32 @@
         </div>
     </footer>
 
-<div class="floating-cta">
-        <a href="tel:+18584440414" class="btn btn-call" aria-label="Call us"><i class="fas fa-phone"></i></a>
-        <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-book" aria-label="Book now"><i class="fas fa-calendar-check"></i></a>
+    <!-- Floating Mobile CTA -->
+    <div class="floating-cta">
+        <a href="tel:+18584440414" class="btn btn-call" data-tw-track="phone_click" aria-label="Call Transformative Wellness at (858) 444-0414"><i class="fas fa-phone"></i></a>
+        <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-book" data-tw-track="book_float" aria-label="Book online — open scheduling"><i class="fas fa-calendar-check"></i></a>
     </div>
+
+    <!-- GHL Webchat Widget -->
+    <chat-widget
+      style="--chat-widget-primary-color: #5c4135; --chat-widget-secondary-color: #9ac1c4;"
+      location-id="tk_5d18d5afd6104cd28cf7658e6aba2307"
+      prompt-msg="Hi there! 👋 How can we help you today?"
+      heading="Transformative Wellness"
+      sub-heading="We typically reply within minutes during business hours"
+      show-avatar="true"
+      primary-color="#5c4135"
+      secondary-color="#9ac1c4">
+    </chat-widget>
+    <script src="https://widgets.leadconnectorhq.com/chat-widget.js" type="text/javascript"></script>
 
     <div class="ageless-mobile-bar" role="region" aria-label="AI treatment preview">
         <a href="https://ageless.ai/a/transformativewellness/transformation" class="ageless-mobile-bar-link" target="_blank" rel="noopener noreferrer">See Your AI Treatment Preview →</a>
     </div>
 
+    <script src="js/promo-config.js" defer></script>
+    <script src="js/site-enhancements.js" defer></script>
     <script src="js/ageless.js" defer></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

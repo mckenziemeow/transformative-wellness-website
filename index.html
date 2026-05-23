@@ -14,20 +14,28 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://www.google-analytics.com">
     
-    <!-- Preload critical resources -->
-    <link rel="preload" href="images/lobby/lobby-reception-new.jpg" as="image" fetchpriority="high">
+    <!-- Preload critical resources (WebP first for LCP; JPEG inside <picture> fallback) -->
+    <link rel="preload" href="images/lobby/lobby-reception-new.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="preload" href="css/style.css" as="style">
     
     <!-- AI Search / Schema Markup -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
+        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@id": "https://transformativemedspa.com/#localbusiness",
         "name": "Transformative Wellness",
         "description": "Premier medical spa offering aesthetic treatments, weight loss programs, and wellness solutions in Vista, CA.",
         "url": "https://transformativemedspa.com",
-        "telephone": "+1-858-444-0414",
+        "telephone": "+18584440414",
         "email": "info@transformativemedspa.com",
+        "image": [
+            "https://transformativemedspa.com/images/logo.webp",
+            "https://transformativemedspa.com/images/logo.png",
+            "https://transformativemedspa.com/images/lobby/lobby-reception-new.webp",
+            "https://transformativemedspa.com/images/lobby/lobby-reception-new.jpg"
+        ],
+        "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "969 Vale Terrace Drive, Suite B",
@@ -42,37 +50,57 @@
             "longitude": "-117.2300"
         },
         "openingHours": [
-            "Mo 09:00-18:00",
-            "We 09:00-18:00",
-            "Fr 09:00-18:00",
-            "Sa 09:00-16:00"
+            "Mo 10:00-19:00",
+            "We 10:00-19:00",
+            "Th 10:00-19:00",
+            "Fr 10:00-19:00",
+            "Sa 10:00-16:00"
         ],
-        "priceRange": "$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "150"
-        }
-    }
-    </script>
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
-        "name": "Transformative Wellness",
-        "image": "https://transformativemedspa.com/images/lobby/lobby-reception-new.jpg",
-        "url": "https://transformativemedspa.com",
-        "telephone": "+18584440414",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "969 Vale Terrace Drive, Suite B",
-            "addressLocality": "Vista",
-            "addressRegion": "CA",
-            "postalCode": "92084",
-            "addressCountry": "US"
-        },
-        "priceRange": "$$",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Monday",
+                "opens": "10:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Wednesday",
+                "opens": "10:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Thursday",
+                "opens": "10:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Friday",
+                "opens": "10:00",
+                "closes": "19:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:00",
+                "closes": "16:00"
+            }
+        ],
+        "medicalSpecialty": ["Dermatology", "PlasticSurgery"],
+        "sameAs": [
+            "https://www.instagram.com/transformative_wellness/",
+            "https://www.facebook.com/Transformativewellnesscenters/",
+            "https://www.yelp.com/biz/transformative-wellness-vista-3"
+        ],
+        "availableService": [
+            { "@type": "MedicalProcedure", "name": "Botox Injections", "procedureType": "https://schema.org/NoninvasiveProcedure" },
+            { "@type": "MedicalProcedure", "name": "Dermal Fillers", "procedureType": "https://schema.org/NoninvasiveProcedure" },
+            { "@type": "MedicalProcedure", "name": "ClearLift Laser", "procedureType": "https://schema.org/NoninvasiveProcedure" },
+            { "@type": "MedicalProcedure", "name": "Medical Weight Loss (GLP-1)", "procedureType": "https://schema.org/NoninvasiveProcedure" },
+            { "@type": "MedicalProcedure", "name": "IV Therapy", "procedureType": "https://schema.org/NoninvasiveProcedure" }
+        ],
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
@@ -144,7 +172,7 @@
                 "name": "Do you offer payment plans or financing for treatments?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! We offer Cherry, CareCredit, and Affirm financing to make treatments more affordable. Many patients qualify for 0% interest plans. We also offer membership programs (Beauty Bank at $149/month or Perks at $49/month) that include monthly credits and discounts on services. During your consultation, we'll discuss all payment options and help find a solution that works for your budget."
+                    "text": "Yes! We offer Cherry, CareCredit, and Affirm financing to make treatments more affordable. Many patients qualify for 0% interest plans. We also offer Beauty Bank and Perks membership programs with monthly credits and discounts on services. During your consultation, we'll discuss all payment options and help find a solution that works for your budget."
                 }
             },
             {
@@ -152,7 +180,7 @@
                 "name": "What's the difference between your Beauty Bank and Perks membership?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Beauty Bank ($149/month) is best for regular clients and includes $149 in monthly credits to spend on any service, plus discounts on neurotoxin, GLP-1 weight loss, retail products, and complimentary B12 shots quarterly. Perks ($49/month) is perfect for occasional visitors and includes discounts on services and products plus B12 shots twice a year. Both memberships have a 6-month minimum commitment."
+                    "text": "Beauty Bank is best for regular clients and includes a monthly service credit plus discounts on neurotoxin, GLP-1 weight loss, retail products, and complimentary B12 shots quarterly. Perks is perfect for occasional visitors and includes discounts on services and products plus B12 shots twice a year. Both memberships have a 6-month minimum commitment. Details and current benefits are reviewed at enrollment."
                 }
             },
             {
@@ -176,7 +204,7 @@
                 "name": "Who are the injectors at Transformative Wellness in Vista?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Transformative Wellness has a team of expert injectors including board-certified nurses and medical professionals led by Dr. Purdy. Our lead RNs include McKenzie (Lead RN), Keeley Einck (Lead RN), and Ariana Varela (Lead RN Murrieta). All injectors have specialized training in aesthetic medicine and are known for delivering natural-looking results. Meet the full team on our website."
+                    "text": "Transformative Wellness has a team of expert injectors including board-certified nurses and medical professionals led by Dr. Yang. Our lead RNs include McKenzie (Lead RN), Keeley Einck (Lead RN), and Ariana Varela (Lead RN Murrieta). All injectors have specialized training in aesthetic medicine and are known for delivering natural-looking results. Meet the full team on our website."
                 }
             },
             {
@@ -208,7 +236,71 @@
                 "name": "Is Semaglutide available for weight loss in Vista California?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, Transformative Wellness in Vista, CA offers medical weight loss programs with both Semaglutide and Tirzepatide. These FDA-cleared medications help control appetite and blood sugar for sustainable weight loss. Our program includes weekly injections, medical monitoring, and personalized nutrition guidance. Most patients lose 15-20% of their body weight over 12-18 months. Memberships include $100 off GLP-1 treatments. Book a consultation to see if you qualify."
+                    "text": "Yes, Transformative Wellness in Vista, CA offers medical weight loss programs with both Semaglutide and Tirzepatide. These FDA-cleared medications help control appetite and blood sugar for sustainable weight loss. Our program includes weekly injections, medical monitoring, and personalized nutrition guidance. Most patients lose 15-20% of their body weight over 12-18 months. Members may receive additional GLP-1 savings — ask during your consultation. Book a consultation to see if you qualify."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where can I get IV therapy or NAD+ in Vista, CA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Transformative Wellness in Vista offers physician-supervised IV vitamin therapy—including hydration, immune-support blends, and NAD+ protocols—in a comfortable medical spa setting. Infusions are tailored to your goals and health history after review by our clinical team. Book a consultation to discuss ingredients, visit length, and pricing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best medical weight loss clinic near me in North County San Diego?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Patients across North County choose Transformative Wellness in Vista for GLP-1 medical weight loss with Semaglutide and Tirzepatide under medical supervision, plus nutrition guidance and accountability. We prioritize eligibility screening, dosing safety, and follow-up. Start with a consultation to see if our program matches your goals and health profile."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is ClearLift laser and is there downtime?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ClearLift is a non-ablative laser treatment we offer for gradual skin rejuvenation with minimal to no downtime—often called a lunchtime laser. It can improve fine lines, texture, and early photoaging over a series of visits. Deeper lasers (such as CO2-based options) may require several days of social downtime. Your provider will recommend the best modality after assessing your skin."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does Botox last?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most Botox results last about 3-4 months, depending on metabolism, muscle strength, dose, and area treated. Some patients schedule touch-ups on a predictable cadence to maintain smooth, natural movement. At your Vista consultation we map units to your goals so results look refreshed—not frozen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is microneedling worth it for acne scars or texture in Vista?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Microneedling can improve texture, fine lines, and certain acne scars by stimulating collagen over a series of treatments. We may combine or alternate with laser or skincare based on your skin type and downtime preferences. A consultation includes honest expectations, number of sessions, and post-care so you can decide if it fits your plan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many laser hair removal sessions do I need?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most areas need a series of sessions spaced weeks apart because hair grows in cycles. Many patients see meaningful reduction after several visits; exact count varies by area, hair color, skin type, and hormones. We customize a schedule at your Vista appointment and review pre- and post-treatment care for best results."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I choose Botox or dermal fillers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Botox relaxes dynamic wrinkles caused by muscle movement (forehead, frown lines, crow's feet). Fillers restore volume or contour (lips, cheeks, under-eyes) with hyaluronic-acid-based products. Many patients use both. Your injector explains which option—or combination—matches your anatomy and goals during a complimentary consultation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Tirzepatide and how is it different from Semaglutide?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Both are GLP-1–based medications used for weight management when prescribed appropriately. Tirzepatide also targets an additional pathway (GIP), which for some patients enhances appetite control and outcomes. Not everyone is a candidate; our Vista providers review history, contraindications, and monitoring. Ask which option fits you at your medical weight loss consultation."
                 }
             }
         ]
@@ -242,7 +334,12 @@
         "description": "Vista's premier medical spa offering Botox, fillers, laser treatments, medical weight loss, and IV therapy with board-certified providers.",
         "url": "https://transformativemedspa.com",
         "logo": "https://transformativemedspa.com/images/logo.png",
-        "image": "https://transformativemedspa.com/images/lobby/lobby-reception-new.jpg",
+        "image": [
+            "https://transformativemedspa.com/images/lobby/lobby-reception-new.webp",
+            "https://transformativemedspa.com/images/lobby/lobby-reception-new.jpg",
+            "https://transformativemedspa.com/images/logo.webp",
+            "https://transformativemedspa.com/images/logo.png"
+        ],
         "telephone": "+1-858-444-0414",
         "email": "info@transformativemedspa.com",
         "sameAs": [
@@ -361,6 +458,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://transformativemedspa.com/">
     <meta property="og:image" content="https://transformativemedspa.com/images/lobby/lobby-reception-new.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
     <meta property="og:image:alt" content="Transformative Wellness reception and lobby in Vista, California">
     <meta property="og:site_name" content="Transformative Wellness">
     <meta property="og:locale" content="en_US">
@@ -462,7 +561,10 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Transformative Wellness" class="logo-img">
+                <picture>
+                    <source type="image/webp" srcset="images/logo.webp">
+                    <img src="images/logo.png" alt="Transformative Wellness" class="logo-img" width="200" height="80" decoding="async">
+                </picture>
             </a>
             <button class="mobile-toggle" aria-label="Toggle navigation menu">
                 <span></span>
@@ -508,21 +610,24 @@
                 loop
                 playsinline
                 preload="metadata"
-                poster="images/lobby/lobby-reception-new.jpg"
+                poster="images/lobby/lobby-reception-new.webp"
                 aria-hidden="true"
             >
                 <source src="videos/hero.mp4" type="video/mp4">
             </video>
-            <img
-                class="hero-bg-image hero-bg-fallback"
-                src="images/lobby/lobby-reception-new.jpg"
-                alt=""
-                width="1920"
-                height="1080"
-                fetchpriority="high"
-                decoding="async"
-                hidden
-            >
+            <picture>
+                <source type="image/webp" srcset="images/lobby/lobby-reception-new.webp">
+                <img
+                    class="hero-bg-image hero-bg-fallback"
+                    src="images/lobby/lobby-reception-new.jpg"
+                    alt=""
+                    width="1920"
+                    height="1440"
+                    fetchpriority="high"
+                    decoding="async"
+                    hidden
+                >
+            </picture>
             <div class="hero-overlay-stack" aria-hidden="true">
                 <div class="hero-dark-overlay"></div>
                 <div class="hero-vignette"></div>
@@ -535,9 +640,13 @@
                 <p class="hero-subtitle hero-subtitle--premium">Board-certified providers. 150+ five-star reviews. Natural results you'll love.</p>
                 <p class="hero-supporting hero-supporting--premium">Complimentary consultations · <a href="tel:+18584440414">(858) 444-0414</a></p>
                 <div class="hero-buttons">
-                    <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-hero-primary">Book Free Consultation</a>
-                    <a href="https://ageless.ai/a/transformativewellness/transformation" class="btn btn-hero-outline" target="_blank" rel="noopener noreferrer">See Your AI Treatment Preview</a>
+                    <a href="https://ageless.ai/a/transformativewellness/transformation" class="btn btn-hero-ageless" target="_blank" rel="noopener noreferrer" data-ageless-track data-ageless-position="hero">See what treatments would look like on you</a>
+                    <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-hero-primary" data-tw-track="hero_schedule_consult">Schedule consultation</a>
+                    <a href="contact.html" class="btn btn-hero-outline" data-tw-track="hero_contact">Questions first? Contact us</a>
                 </div>
+                <p class="hero-tertiary-actions">
+                    <a href="find-your-treatment.html">Help me choose a treatment</a>
+                </p>
             </div>
         </div>
 
@@ -545,7 +654,7 @@
             <ul class="hero-trust-rail-inner">
                 <li class="hero-trust-item">
                     <i class="fas fa-star" aria-hidden="true"></i>
-                    <span>Google 4.9★ · 150+ reviews</span>
+                    <span>500+ happy patients · 4.9★ Google · board-certified</span>
                 </li>
                 <li class="hero-trust-item">
                     <i class="fas fa-user-md" aria-hidden="true"></i>
@@ -577,6 +686,35 @@
         </div>
     </section>
 
+    <section class="tw-commitment-strip" aria-labelledby="tw-commitment-heading">
+        <div class="container tw-commitment-inner">
+            <h2 id="tw-commitment-heading" class="tw-commitment-heading">Care you can count on</h2>
+            <ul class="tw-commitment-grid">
+                <li class="tw-commitment-item">
+                    <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                    <div>
+                        <strong>We're here after your visit</strong>
+                        <span>If something feels off, call us within 30 days so we can assess and discuss next steps.</span>
+                    </div>
+                </li>
+                <li class="tw-commitment-item">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <div>
+                        <strong>Medical-grade standards</strong>
+                        <span>Licensed providers, FDA-cleared devices where applicable, and straightforward treatment planning.</span>
+                    </div>
+                </li>
+                <li class="tw-commitment-item">
+                    <i class="fas fa-credit-card" aria-hidden="true"></i>
+                    <div>
+                        <strong>Flexible payment options</strong>
+                        <span>Cherry, CareCredit, and Affirm — we'll review what fits during your consultation.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <!-- Provider showcase — horizontal scroll -->
     <section class="provider-showcase" aria-labelledby="provider-showcase-title">
         <div class="container">
@@ -587,15 +725,21 @@
             </div>
             <div class="provider-showcase-inner">
                 <article class="provider-chip">
-                    <img src="images/team/dr-purdy.jpg" alt="Dr. Laura Purdy, Medical Director" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    <picture>
+                        <source type="image/webp" srcset="images/team/dr-yang.webp">
+                        <img src="images/team/dr-yang.jpg" alt="Dr. Joshua Yang, Medical Director" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    </picture>
                     <div class="provider-chip-body">
                         <span class="provider-chip__cred">MD</span>
-                        <h3>Dr. Laura Purdy</h3>
+                        <h3>Dr. Joshua Yang</h3>
                         <p>Medical Director · Aesthetic medicine</p>
                     </div>
                 </article>
                 <article class="provider-chip">
-                    <img src="images/team/ara.jpg" alt="Ara Jin, RN" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    <picture>
+                        <source type="image/webp" srcset="images/team/ara.webp">
+                        <img src="images/team/ara.jpg" alt="Ara Jin, RN" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    </picture>
                     <div class="provider-chip-body">
                         <span class="provider-chip__cred">RN</span>
                         <h3>Ara Jin</h3>
@@ -603,7 +747,10 @@
                     </div>
                 </article>
                 <article class="provider-chip">
-                    <img src="images/team/mckenzie.jpg" alt="McKenzie Chavez, Lead RN" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    <picture>
+                        <source type="image/webp" srcset="images/team/mckenzie.webp">
+                        <img src="images/team/mckenzie.jpg" alt="McKenzie Chavez, Lead RN" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    </picture>
                     <div class="provider-chip-body">
                         <span class="provider-chip__cred">RN</span>
                         <h3>McKenzie Chavez</h3>
@@ -611,7 +758,10 @@
                     </div>
                 </article>
                 <article class="provider-chip">
-                    <img src="images/team/michelle.jpg" alt="Michelle, Medical Assistant" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    <picture>
+                        <source type="image/webp" srcset="images/team/michelle.webp">
+                        <img src="images/team/michelle.jpg" alt="Michelle, Medical Assistant" class="provider-chip__img" width="400" height="500" loading="lazy" decoding="async">
+                    </picture>
                     <div class="provider-chip-body">
                         <span class="provider-chip__cred">MA</span>
                         <h3>Michelle</h3>
@@ -668,22 +818,40 @@
             <div class="home-ba-grid">
                 <figure class="home-ba-figure">
                     <img-comparison-slider>
-                        <img slot="first" src="images/services/skin-care.jpg" alt="Before — baseline skin texture" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/skin-rejuvenation.jpg" alt="After — rejuvenated appearance" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/services/skin-care.webp">
+                            <img slot="first" src="images/services/skin-care.jpg" alt="Before — baseline skin texture" loading="lazy" decoding="async">
+                        </picture>
+                        <picture>
+                            <source type="image/webp" srcset="images/services/skin-rejuvenation.webp">
+                            <img slot="second" src="images/services/skin-rejuvenation.jpg" alt="After — rejuvenated appearance" loading="lazy" decoding="async">
+                        </picture>
                     </img-comparison-slider>
                     <figcaption>Skin rejuvenation · representative pairing</figcaption>
                 </figure>
                 <figure class="home-ba-figure">
                     <img-comparison-slider>
-                        <img slot="first" src="images/services/facial-treatment.jpg" alt="Before facial treatment" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/microneedling.jpg" alt="After microneedling course" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/services/facial-treatment.webp">
+                            <img slot="first" src="images/services/facial-treatment.jpg" alt="Before facial treatment" loading="lazy" decoding="async">
+                        </picture>
+                        <picture>
+                            <source type="image/webp" srcset="images/services/microneedling.webp">
+                            <img slot="second" src="images/services/microneedling.jpg" alt="After microneedling course" loading="lazy" decoding="async">
+                        </picture>
                     </img-comparison-slider>
                     <figcaption>Facial renewal · illustrative</figcaption>
                 </figure>
                 <figure class="home-ba-figure">
                     <img-comparison-slider>
-                        <img slot="first" src="images/services/laser-treatment.jpg" alt="Before laser series" loading="lazy" decoding="async">
-                        <img slot="second" src="images/services/age-defying.jpg" alt="After laser series" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp" srcset="images/services/laser-treatment.webp">
+                            <img slot="first" src="images/services/laser-treatment.jpg" alt="Before laser series" loading="lazy" decoding="async">
+                        </picture>
+                        <picture>
+                            <source type="image/webp" srcset="images/services/age-defying.webp">
+                            <img slot="second" src="images/services/age-defying.jpg" alt="After laser series" loading="lazy" decoding="async">
+                        </picture>
                     </img-comparison-slider>
                     <figcaption>Laser &amp; glow · illustrative</figcaption>
                 </figure>
@@ -767,7 +935,7 @@
                     <div class="service-card-bg__body">
                         <h3>Injectables</h3>
                         <p class="service-card-bg__benefit">Smooth lines and restore volume—natural, never overdone.</p>
-                        <span class="service-card-bg__price">Starting at $12/unit · packages available</span>
+                        <span class="service-card-bg__price">Personalized pricing · consultation</span>
                         <span class="service-card-bg__link">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                     </div>
                 </a>
@@ -775,7 +943,7 @@
                     <div class="service-card-bg__body">
                         <h3>Skin / Laser</h3>
                         <p class="service-card-bg__benefit">ClearLift, IPL, CO2 CoolPeel—glow with minimal downtime options.</p>
-                        <span class="service-card-bg__price">Starting at $199 · consult for custom plan</span>
+                        <span class="service-card-bg__price">Custom treatment plans · consultation</span>
                         <span class="service-card-bg__link">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                     </div>
                 </a>
@@ -791,7 +959,7 @@
                     <div class="service-card-bg__body">
                         <h3>IV Therapy</h3>
                         <p class="service-card-bg__benefit">Hydration, vitamins, and NAD+ for energy and recovery.</p>
-                        <span class="service-card-bg__price">Starting at $125 · drips &amp; boosters</span>
+                        <span class="service-card-bg__price">Drips &amp; boosters · consultation</span>
                         <span class="service-card-bg__link">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
                     </div>
                 </a>
@@ -899,8 +1067,7 @@
                         <h3>The Essential</h3>
                         <p class="package-subtitle">For subtle refreshment</p>
                     </div>
-                    <p class="package-price">From <strong>$480+</strong></p>
-                    <span class="package-save">Bundle value vs. walk-in à la carte</span>
+                    <span class="package-save">Bundle savings vs. individual services — quote at consultation</span>
                     <p class="package-urgency" data-promo-package-urgency>Spring Special — Book by April 15</p>
                     <div class="package-for">
                         <strong>Perfect for:</strong> First-time Botox clients wanting natural-looking results
@@ -919,8 +1086,7 @@
                         <h3>The Complete</h3>
                         <p class="package-subtitle">For full-face rejuvenation</p>
                     </div>
-                    <p class="package-price">From <strong>$720+</strong></p>
-                    <span class="package-save">Best per-unit savings in trio</span>
+                    <span class="package-save">Strongest bundle value in the trio — quote at consultation</span>
                     <p class="package-urgency" data-promo-package-urgency>Spring Special — Book by April 15</p>
                     <div class="package-for">
                         <strong>Perfect for:</strong> Comprehensive results or event prep
@@ -939,8 +1105,7 @@
                         <h3>The Transformation</h3>
                         <p class="package-subtitle">For dramatic results</p>
                     </div>
-                    <p class="package-price">From <strong>$1,050+</strong></p>
-                    <span class="package-save">Maximum units · lowest per-unit cost</span>
+                    <span class="package-save">Maximum dosing in bundle — quote at consultation</span>
                     <p class="package-urgency" data-promo-package-urgency>Spring Special — Book by April 15</p>
                     <div class="package-for">
                         <strong>Perfect for:</strong> Full-face refresh + jawline contouring goals
@@ -954,7 +1119,7 @@
                     <a href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" class="btn btn-outline btn-full">Book Now</a>
                 </div>
             </div>
-            <p class="text-center" style="margin-top:var(--spacing-md);font-size:0.85rem;color:var(--color-text-light);max-width:40rem;margin-left:auto;margin-right:auto;">Pricing varies by product and dosing — exact quote at your $25 consult (applied to treatment).</p>
+            <p class="text-center" style="margin-top:var(--spacing-md);font-size:0.85rem;color:var(--color-text-light);max-width:40rem;margin-left:auto;margin-right:auto;">Investment varies by product and dosing — your provider will review personalized pricing at consultation.</p>
         </div>
     </section>
 
@@ -970,14 +1135,10 @@
                 <div class="membership-card">
                     <div class="membership-header">
                         <h3>Beauty Bank</h3>
-                        <div class="membership-price">
-                            <span class="price">$149</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="membership-subtitle">Best for regular clients</p>
+                        <p class="membership-subtitle">Monthly membership · best for regular clients</p>
                     </div>
                     <ul class="membership-features">
-                        <li><i class="fas fa-check"></i> <strong>$150 monthly credit</strong> to spend on any service</li>
+                        <li><i class="fas fa-check"></i> <strong>Monthly service credit</strong> to apply toward any service</li>
                         <li><i class="fas fa-check"></i> 15% off all services</li>
                         <li><i class="fas fa-check"></i> 15% off skincare & retail</li>
                         <li><i class="fas fa-check"></i> Priority booking</li>
@@ -988,11 +1149,7 @@
                 <div class="membership-card featured">
                     <div class="membership-header">
                         <h3>Perks</h3>
-                        <div class="membership-price">
-                            <span class="price">$49</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="membership-subtitle">Best for occasional visitors</p>
+                        <p class="membership-subtitle">Monthly membership · best for occasional visitors</p>
                     </div>
                     <ul class="membership-features">
                         <li><i class="fas fa-check"></i> 15% off all services</li>
@@ -1008,14 +1165,14 @@
                 <thead>
                     <tr>
                         <th>Benefit</th>
-                        <th>Beauty Bank · $149/mo</th>
-                        <th>Perks · $49/mo</th>
+                        <th>Beauty Bank</th>
+                        <th>Perks</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Monthly service credit</td>
-                        <td class="check">$149 to spend on services</td>
+                        <td class="check">Yes — monthly service credit</td>
                         <td>—</td>
                     </tr>
                     <tr>
@@ -1187,7 +1344,7 @@
                 </div>
                 
                 <p class="financing-estimate">
-                    <strong>As low as ~$49–$99/mo</strong> for many treatment plans with approved Cherry, CareCredit, or Affirm — exact payment depends on amount &amp; term. Ask about 0% APR promotions.
+                    <strong>Flexible monthly payments</strong> may be available with approved Cherry, CareCredit, or Affirm — terms depend on amount financed. Ask about 0% APR promotions.
                 </p>
                 <p class="financing-note">
                     <i class="fas fa-info-circle"></i> 
@@ -1215,7 +1372,7 @@
                             <i class="fas fa-gift"></i>
                             <div>
                                 <h4>Earn Points</h4>
-                                <p>Get points for every dollar spent on treatments and products</p>
+                                <p>Earn points on qualifying treatments and products</p>
                             </div>
                         </div>
                         <div class="reward-feature">
@@ -1309,7 +1466,7 @@
                     </button>
                     <div id="faq-answer-consultation" class="faq-answer">
                         <div class="faq-answer-content">
-                            Yes, the consultation fee is $25, which is applied toward your treatment when you move forward. This covers your personalized assessment, goal review, and Signature Transformation plan design.
+                            Yes. There is a consultation fee, which is applied toward your treatment when you move forward. This covers your personalized assessment, goal review, and Signature Transformation plan design.
                         </div>
                     </div>
                 </div>
@@ -1331,7 +1488,7 @@
                     </button>
                     <div id="faq-answer-5" class="faq-answer">
                         <div class="faq-answer-content">
-                            Our memberships offer 15% off all services and products. Beauty Bank ($149/month) includes $149 in monthly credits, while Perks ($49/month) is perfect for occasional visitors. Both include priority booking and exclusive member promotions.
+                            Our memberships offer 15% off all services and products. Beauty Bank includes a monthly service credit; Perks is tailored for occasional visitors with discounts and perks. Both include priority booking and exclusive member promotions. Current tiers are explained when you enroll.
                         </div>
                     </div>
                 </div>
@@ -1348,7 +1505,7 @@
                 
                 <!-- Consultation Fee Note -->
                 <div class="consultation-fee-note" style="background: var(--color-cream); padding: var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">
-                    <p style="margin: 0; font-size: 0.95rem;"><i class="fas fa-info-circle" style="color: var(--color-sage);"></i> <strong>Consultation:</strong> $25 consultation fee applies toward your treatment</p>
+                    <p style="margin: 0; font-size: 0.95rem;"><i class="fas fa-info-circle" style="color: var(--color-sage);"></i> <strong>Consultation:</strong> Fee applies toward your treatment when you book</p>
                 </div>
                 
                 <!-- New Patient Offer -->
@@ -1404,19 +1561,21 @@
                     <ul>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="before-after.html">Results</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="memberships.html">Memberships</a></li>
                         <li><a href="about.html">About</a></li>
+                        <li><a href="locations/vista.html">Vista location</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Top treatments</h4>
                     <ul>
-                        <li><a href="injectables.html">Botox</a></li>
-                        <li><a href="injectables.html">Fillers</a></li>
-                        <li><a href="skin-laser.html">Laser</a></li>
-                        <li><a href="body-weight.html">Weight loss</a></li>
-                        <li><a href="iv-therapy.html">IV therapy</a></li>
+                        <li><a href="services/botox/">Botox</a></li>
+                        <li><a href="services/fillers/">Fillers</a></li>
+                        <li><a href="services/laser/">Laser</a></li>
+                        <li><a href="services/weight-loss/">Weight loss</a></li>
+                        <li><a href="services/iv-therapy/">IV therapy</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -1425,10 +1584,13 @@
                     <p><i class="fas fa-phone"></i> <a href="tel:+18584440414">(858) 444-0414</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:info@transformativemedspa.com">info@transformativemedspa.com</a></p>
                     <ul class="footer-hours">
-                        <li><strong>Mon</strong> 9am – 6pm</li>
-                        <li><strong>Wed</strong> 9am – 6pm</li>
-                        <li><strong>Fri</strong> 9am – 6pm</li>
-                        <li><strong>Sat</strong> 9am – 4pm</li>
+                        <li><strong>Mon</strong> 10am – 7pm</li>
+                        <li><strong>Tue</strong> Closed</li>
+                        <li><strong>Wed</strong> 10am – 7pm</li>
+                        <li><strong>Thu</strong> 10am – 7pm</li>
+                        <li><strong>Fri</strong> 10am – 7pm</li>
+                        <li><strong>Sat</strong> 10am – 4pm</li>
+                        <li><strong>Sun</strong> Closed</li>
                     </ul>
                     <iframe class="footer-map-embed" title="Transformative Wellness on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=969+Vale+Terrace+Dr+Suite+B+Vista+CA+92084&amp;hl=en&amp;z=14&amp;output=embed"></iframe>
                 </div>
@@ -1445,10 +1607,11 @@
                 <h3>Not sure where to start?</h3>
                 <p>Our AI Treatment Advisor matches you with treatment ideas based on your goals. Free consultations — <a href="tel:+18584440414">(858) 444-0414</a></p>
                 <p class="footer-ageless-address">969 Vale Terrace Dr, Suite B · Vista, CA 92084</p>
-                <a href="https://ageless.ai/a/transformativewellness/transformation" class="ageless-footer-btn" target="_blank" rel="noopener noreferrer">Start Your Free Assessment</a>
+                <a href="https://ageless.ai/a/transformativewellness/transformation" class="ageless-footer-btn" target="_blank" rel="noopener noreferrer" data-ageless-track data-ageless-position="footer">Start Your Free Assessment</a>
             </div>
 
             <div class="footer-bottom">
+                <p class="footer-aw-crosslink">Same physician-led standards — telehealth peptide &amp; GLP-1 programs at <a href="https://authenticwellness.com/" target="_blank" rel="noopener noreferrer">AuthenticWellness.com</a></p>
                 <p>&copy; 2026 Transformative Wellness. All rights reserved.</p>
                 <div class="footer-legal">
                     <a href="privacy-policy.html">Privacy</a>
