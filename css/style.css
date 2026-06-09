@@ -477,7 +477,7 @@ html, body {
 .hero--premium .hero-dark-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(92, 65, 53, 0.55);
+  background: rgba(92, 65, 53, 0.38);
 }
 
 .hero--premium .hero-vignette {
@@ -487,7 +487,7 @@ html, body {
     180deg,
     rgba(0, 0, 0, 0.12) 0%,
     transparent 42%,
-    rgba(30, 18, 16, 0.45) 100%
+    rgba(30, 18, 16, 0.30) 100%
   );
 }
 
