@@ -4,17 +4,17 @@
     /* Official Transformative Wellness palette (Notion Brand Kit) */
     --color-primary: #5c4135;       /* Deep Cocoa — nav, headings, primary buttons */
     --color-secondary: #aa8f80;     /* Clay Rose — secondary text, hover states */
-    --color-accent: #9ac1c4;        /* Ocean Mist Blue — CTAs, links, highlights */
+    --color-accent: #4e2c2c;        /* Deep Maroon (Fig) — primary CTA + brand pop (matches scrubs) */
     --color-background: #f3eee5;    /* Bone Cream — page background */
     --color-surface: #e8dccb;       /* Creamy Beige — cards, sections */
     --color-text: #4e2c2c;          /* Deep Maroon / Fig — body text */
     --color-text-light: #c5b4a0;    /* Soft Sandstone — muted / secondary text */
     --color-text-muted: #c5b4a0;
     --color-border: #d7c8bb;        /* Clay Beige */
-    --color-hero-accent: #9ac1c4;   /* “Live Better” & hero highlights */
-    --color-button-primary-bg: #5c4135;
+    --color-hero-accent: #4e2c2c;   /* Deep Maroon — hero highlights / brand pop */
+    --color-button-primary-bg: #4e2c2c;
     --color-button-primary-text: #f3eee5;
-    --color-button-secondary-bg: #9ac1c4;
+    --color-button-secondary-bg: #5c4135;
     --color-button-secondary-text: #4e2c2c;
 
     --color-cream: #e8dccb;
