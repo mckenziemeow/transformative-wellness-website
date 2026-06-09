@@ -117,3 +117,28 @@
     initPromoInject();
   }
 })();
+
+/* Hero video: load + play only on desktop (>=1024px), respecting Save-Data and
+   reduced-motion. On phones the lightweight static hero image is used instead,
+   so mobile never downloads the ~4.6 MB videos/hero.mp4. Added 2026-06-09. */
+(function () {
+  try {
+    var v = document.querySelector('.hero-bg-video');
+    if (!v) return;
+    var conn = navigator.connection || {};
+    var saveData = conn.saveData === true;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var desktop = window.matchMedia('(min-width: 1024px)').matches;
+    if (desktop && !saveData && !reduced) {
+      var src = v.getAttribute('data-src');
+      if (src) {
+        v.setAttribute('src', src);
+        v.load();
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+    } else if (v.parentNode) {
+      v.parentNode.removeChild(v);
+    }
+  } catch (e) {}
+})();

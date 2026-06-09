@@ -6317,7 +6317,13 @@ html, body {
     height: 100%;
     object-fit: cover;
     object-position: center 30%;
-    z-index: 0;
+    z-index: 1;
+}
+
+/* Video has no src until JS loads it (desktop only) — until then the static
+   image shows. This is what keeps mobile from downloading the 4.6 MB video. */
+.hero-bg-video:not([src]) {
+    display: none;
 }
 
 .hero-bg-fallback {

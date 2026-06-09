@@ -578,18 +578,6 @@
     <!-- HERO — Phase 1: readable overlay + outcome copy + trust rail -->
     <section class="hero hero--welcome hero--premium" aria-labelledby="hero-heading">
         <div class="hero-visual">
-            <video
-                class="hero-bg-video"
-                autoplay
-                muted
-                loop
-                playsinline
-                preload="metadata"
-                poster="images/lobby/lobby-reception-new.webp"
-                aria-hidden="true"
-            >
-                <source src="videos/hero.mp4" type="video/mp4">
-            </video>
             <picture>
                 <source type="image/webp" srcset="images/lobby/lobby-reception-new.webp">
                 <img
@@ -600,9 +588,18 @@
                     height="1440"
                     fetchpriority="high"
                     decoding="async"
-                    hidden
                 >
             </picture>
+            <video
+                class="hero-bg-video"
+                muted
+                loop
+                playsinline
+                preload="none"
+                poster="images/lobby/lobby-reception-new.webp"
+                aria-hidden="true"
+                data-src="videos/hero.mp4"
+            ></video>
             <div class="hero-overlay-stack" aria-hidden="true">
                 <div class="hero-dark-overlay"></div>
                 <div class="hero-vignette"></div>
