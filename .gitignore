@@ -1,1 +1,17 @@
-﻿.wrangler/
+.wrangler/
+
+# Ruflo / ruvector / claude-mem session artifacts
+agentdb.rvf
+agentdb.rvf.lock
+ruvector.db
+*.rvf
+*.rvf.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
