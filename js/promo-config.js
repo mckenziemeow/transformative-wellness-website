@@ -3,7 +3,7 @@
  * `TW_PROMO` is derived for existing site-enhancements.js hooks.
  */
 window.PROMO_CONFIG = {
-  packagePromo: { text: "Spring Special — Book by April 15", active: true },
+  packagePromo: { text: "New Client Special — reserve your consultation", active: true },
   membershipPromo: {
     text: "Join this month: 20% off first treatment (select services)",
     active: true,
