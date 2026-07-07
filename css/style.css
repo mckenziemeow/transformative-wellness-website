@@ -1304,6 +1304,44 @@ html, body {
     color: #fff;
 }
 
+/* Signature Treatments spotlight — laser + high-margin hero cards */
+.signature-section {
+    background: linear-gradient(180deg, var(--color-cream, #f7f1e8) 0%, #fff 100%);
+}
+
+.signature-section .services-grid--phase2 {
+    margin-top: var(--spacing-lg);
+}
+
+.signature-section .service-card-bg {
+    min-height: 340px;
+}
+
+.service-card-bg__badge {
+    position: absolute;
+    top: var(--spacing-md);
+    left: var(--spacing-md);
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-family: var(--font-nav);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(76, 44, 44, 0.82);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card-bg__badge--hot {
+    background: rgba(184, 84, 58, 0.9);
+}
+
 /* Before/after gallery filter tabs */
 .ba-filter-tabs {
     display: flex;
