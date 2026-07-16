@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://www.google-analytics.com">
     
     <!-- Preload critical resources (WebP first for LCP; JPEG inside <picture> fallback) -->
-    <link rel="preload" href="images/lobby/lobby-reception-new.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="images/lobby/lobby-hero.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="preload" href="css/style.css" as="style">
     
     <!-- AI Search / Schema Markup -->
@@ -596,7 +596,8 @@
 
 /* hero */
 .c-hero{padding:88px 0 0}
-.c-hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center;padding-bottom:80px}
+.c-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:stretch;padding-bottom:80px}
+.c-hero-grid>div:first-child{align-self:center}
 .c-hero h1{font-size:clamp(2.9rem,5.8vw,4.7rem);margin-bottom:28px;font-weight:600}
 .c-hero h1 .c-hl{color:var(--c-maroon)}
 .c-lede{font-size:1.06rem;color:var(--c-body);max-width:36em;margin-bottom:40px;font-weight:400}
@@ -623,10 +624,10 @@
 .c-tick strong{font-family:'Oswald',sans-serif;font-weight:500;font-size:2rem;color:var(--c-ink);line-height:1.1}
 .c-tick span{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--c-mute)}
 
-/* hero photo band */
-.c-hero-photo{position:relative}
-.c-hero-photo img{width:100%;height:min(64vh,560px);object-fit:cover;display:block}
-.c-hero-photo figcaption{position:absolute;bottom:26px;left:32px;color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+/* hero image */
+.c-hero-img{position:relative;margin:0}
+.c-hero-img img{width:100%;height:100%;min-height:480px;max-height:620px;object-fit:cover;display:block}
+.c-hero-img figcaption{position:absolute;bottom:22px;left:26px;color:#fff;font-size:.66rem;font-weight:600;letter-spacing:.26em;text-transform:uppercase;text-shadow:0 1px 12px rgba(0,0,0,.45)}
 
 /* sections */
 .c-sec{padding:120px 0}
@@ -746,13 +747,10 @@
       </div>
       <p class="c-hero-note">Not sure where to start? <a href="find-your-treatment.html">Take the 60-second treatment finder</a> or call <a href="tel:+18584440414">(858) 444-0414</a></p>
     </div>
-    <aside class="c-plan" aria-label="Your first visit, step by step">
-      <div class="c-plan-title"><strong>Your first visit, step by step</strong><span>Every guest</span></div>
-      <div class="c-step"><div class="c-step-dot">1</div><div><strong>Consultation — $50, credited to your treatment</strong><span>Goals, skin assessment, exact pricing — 30–45 minutes, zero pressure</span></div></div>
-      <div class="c-step"><div class="c-step-dot">2</div><div><strong>A right-sized plan</strong><span>What will work, what won't, and what we'd skip entirely</span></div></div>
-      <div class="c-step"><div class="c-step-dot">3</div><div><strong>Treat &amp; follow up</strong><span>Licensed providers, and we'll see you if anything feels off within 30 days</span></div></div>
-      <div class="c-plan-foot"><img src="images/team/mckenzie.webp" alt="" width="44" height="44" loading="lazy"><div><em>Family owned &amp; operated</em>Vista, California</div></div>
-    </aside>
+    <figure class="c-hero-img">
+      <img src="images/lobby/lobby-hero.webp" alt="Inside the Transformative Wellness studio in Vista, California" width="1200" height="1500" fetchpriority="high">
+      <figcaption>The studio · Vista, California</figcaption>
+    </figure>
   </div>
   <div class="c-ticker">
     <div class="c-wrap c-ticker-inner">
@@ -762,10 +760,6 @@
       <div class="c-tick"><strong>500+</strong><span>happy patients</span></div>
     </div>
   </div>
-  <figure class="c-hero-photo">
-    <img src="images/lobby/lobby-reception-new.webp" alt="Inside Transformative Wellness — reception and retail wall, Vista, California" loading="lazy" width="1920" height="1440">
-    <figcaption>The studio · Vista, California</figcaption>
-  </figure>
 </header>
 
 <section class="c-sec" id="treatments">
