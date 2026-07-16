@@ -4,7 +4,6 @@
    existing CSS variables plus targeted component refinements.
    Ratified 2026-07-16 (matches homepage v2.1 design language).
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Instrument+Sans:wght@400;500;600&display=swap');
 
 :root {
     /* Palette — warm neutral ground, ink structure, maroon accent only */
