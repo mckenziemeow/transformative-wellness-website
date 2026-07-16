@@ -1,0 +1,100 @@
+/* ============================================================
+   LUX THEME OVERLAY — NakedMD-grade neutral luxury, maroon accents
+   Loads AFTER style.css on every page. Re-skins the site via the
+   existing CSS variables plus targeted component refinements.
+   Ratified 2026-07-16 (matches homepage v2.1 design language).
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Instrument+Sans:wght@400;500;600&display=swap');
+
+:root {
+    /* Palette — warm neutral ground, ink structure, maroon accent only */
+    --color-primary: #191613;          /* ink — nav, headings */
+    --color-secondary: #57504A;        /* warm gray-brown — secondary text */
+    --color-accent: #5A2434;           /* maroon — accents & brand pop */
+    --color-background: #F7F4EE;       /* warm porcelain */
+    --color-surface: #FFFFFF;          /* cards on cream */
+    --color-text: #2A2521;             /* near-ink body */
+    --color-text-light: #8A8378;       /* taupe muted */
+    --color-text-muted: #8A8378;
+    --color-border: #E3DED2;           /* hairline */
+    --color-hero-accent: #5A2434;
+    --color-button-primary-bg: #1B1713;   /* black CTAs */
+    --color-button-primary-text: #FFFFFF;
+    --color-button-secondary-bg: #191613;
+    --color-button-secondary-text: #191613;
+
+    --color-cream: #F0EDE4;
+    --color-card-bg: #FFFFFF;
+    --color-link: #5A2434;             /* kills the legacy teal */
+    --color-footer: #1B1713;           /* dark close everywhere */
+    --color-sage: #5A2434;             /* legacy sage refs -> maroon */
+    --color-sage-light: #EFEBE2;
+    --color-accent-light: #EFEBE2;
+
+    /* Typography — condensed caps display + humanist body */
+    --font-heading: 'Oswald', 'Montserrat', sans-serif;
+    --font-subtitle: 'Instrument Sans', 'Inter', sans-serif;
+    --font-section-heading: 'Oswald', 'Montserrat', sans-serif;
+    --font-body: 'Instrument Sans', 'Inter', sans-serif;
+    --font-nav: 'Instrument Sans', 'Inter', sans-serif;
+    --font-quote: 'Instrument Sans', 'Inter', sans-serif;
+
+    /* Geometry — sharp, editorial */
+    --radius-sm: 2px;
+    --radius-md: 2px;
+    --radius-lg: 2px;
+    --radius-xl: 2px;
+
+    /* Shadows — nearly none; hairlines do the work */
+    --shadow-sm: 0 1px 2px rgba(25,22,19,0.04);
+    --shadow-md: 0 2px 8px rgba(25,22,19,0.05);
+    --shadow-lg: 0 10px 30px -18px rgba(25,22,19,0.18);
+}
+
+/* Display type: uppercase condensed for page + section headings */
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: .015em;
+    font-weight: 600;
+    line-height: 1.06;
+}
+h3 { font-weight: 500; letter-spacing: .02em; }
+
+/* Micro-labels */
+.section-label, .package-tag, .service-card-bg__badge {
+    letter-spacing: .22em !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .68rem !important;
+    border-radius: 0 !important;
+}
+
+/* Buttons — letterspaced uppercase, sharp */
+.btn {
+    border-radius: 2px !important;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    font-size: .78rem;
+    font-weight: 600;
+    box-shadow: none !important;
+}
+.btn-primary { background: var(--color-button-primary-bg) !important; color: #fff !important; border-color: var(--color-button-primary-bg) !important; }
+.btn-primary:hover { background: var(--color-accent) !important; border-color: var(--color-accent) !important; }
+.btn-outline { border: 1px solid var(--color-primary) !important; color: var(--color-primary) !important; background: transparent !important; }
+.btn-outline:hover { background: var(--color-primary) !important; color: #fff !important; }
+
+/* Cards & sections — flatten */
+.treatment-card, .package-card--premium, .service-card, .concern-card, .team-member, .review-card, .faq-item {
+    border-radius: 2px !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+/* Nav — cream, hairline */
+.navbar { background: rgba(247,244,238,.97); border-bottom: 1px solid var(--color-border); box-shadow: none; }
+.nav-menu a { letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; font-weight: 600; }
+
+/* Footer — dark close, cream text */
+.footer, .footer-premium { background: var(--color-footer); color: #EFEAE2; }
+.footer a { color: rgba(239,234,226,.85); }
+.footer a:hover { color: #fff; }
+.footer-tagline { color: rgba(239,234,226,.6); }
