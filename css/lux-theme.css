@@ -97,6 +97,11 @@ html { scroll-behavior: auto !important; }
 body * { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
 body * { scroll-snap-type: none !important; }
 
+/* Mobile nav: one Book button only (the pill); hide the desktop CTA */
+@media (max-width: 768px) {
+    .nav-cta.nav-cta-book { display: none !important; }
+}
+
 /* Footer — dark close, cream text */
 .footer, .footer-premium { background: var(--color-footer); color: #EFEAE2; }
 .footer a { color: rgba(239,234,226,.85); }
