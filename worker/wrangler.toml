@@ -1,0 +1,20 @@
+# Contact form proxy — transformativemedspa.com
+#
+# Deploy:  cd worker && npx wrangler deploy
+# Secret:  npx wrangler secret put TURNSTILE_SECRET
+#
+# GHL_HOOK_URL is a var rather than a secret: it is not a credential, it just must
+# not appear in page source where bots can scrape it and POST directly.
+
+name = "tw-contact-proxy"
+main = "src/index.js"
+compatibility_date = "2026-08-04"
+
+[vars]
+ALLOWED_ORIGIN = "https://transformativemedspa.com"
+GHL_HOOK_URL = "https://api.leadconnectorhq.com/hooks/pit-2294e821-a3c5-4986-a4c9-92db5d3b5454"
+
+# Optional: serve from your own domain instead of *.workers.dev.
+# [[routes]]
+# pattern = "transformativemedspa.com/api/contact"
+# zone_name = "transformativemedspa.com"
