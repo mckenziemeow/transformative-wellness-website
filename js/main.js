@@ -391,3 +391,46 @@ document.querySelectorAll('a[target="_blank"]').forEach(link => {
         });
     });
 });
+
+// Track EVERY link that leaves the site, not just target="_blank" ones.
+//
+// Why this exists: the primary "Book a consultation" button points at
+// mypatientvisit.com without target="_blank", so it was caught by neither the
+// tel: handler nor the _blank handler above. A visitor who landed, clicked Book,
+// and left produced one pageview, zero events and no second pageview — which GA4
+// scores as a bounce. Our best visitors were being counted as our worst, which is
+// most of why the homepage reads 61.75% bounce at 15s average engagement.
+//
+// data-tw-track was already on those buttons in the markup but nothing ever read
+// it. It does now.
+(function () {
+  var seen = new WeakSet();
+
+  document.querySelectorAll('a[href]').forEach(function (link) {
+    var url;
+    try {
+      url = new URL(link.href, window.location.href);
+    } catch (e) {
+      return;
+    }
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return;
+    if (url.hostname === window.location.hostname) return;
+
+    // Don't double-count links the _blank handler above already covers.
+    if (link.target === '_blank') return;
+    if (seen.has(link)) return;
+    seen.add(link);
+
+    link.addEventListener('click', function () {
+      var label = this.getAttribute('data-tw-track');
+      var isBooking = /mypatientvisit|onlinescheduling|scheduler/i.test(this.href);
+
+      gtag('event', isBooking ? 'booking_click' : 'outbound_click', {
+        'link_url': this.href,
+        'link_text': (this.textContent || '').trim().slice(0, 100),
+        'cta_id': label || 'untagged',
+        'transport_type': 'beacon'   // survives the navigation away
+      });
+    });
+  });
+})();
