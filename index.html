@@ -587,11 +587,16 @@
       <span class="c-tag">Family-owned med spa · Vista, CA</span>
       <h1>Vista's <span class="c-hl">Most-Loved</span> Medical Spa</h1>
       <p class="c-lede">High-end care without the high pressure. Natural results from a board-certified team that tells you the truth about what will work, then builds a plan that's right-sized for you.</p>
+      <!-- Both previous hero buttons sent visitors off-site (mypatientvisit, ageless.ai),
+           while the one on-site option — the treatment finder — sat in small grey note
+           text. GA4 Jul 8-Aug 4: 1,437 homepage users, only 246 reached any service page.
+           Most arrivals are not ready to book a paid consult with a stranger, but will
+           spend 60 seconds on a quiz. The finder is now a real button. -->
       <div class="c-hero-actions">
         <a class="c-btn c-btn-green" href="https://www.mypatientvisit.com/onlinescheduling/#/scheduler/schedule?practiceid=e47fce2c-cb7d-4f15-9af0-ff7c5ea03744" data-tw-track="hero_schedule_consult">Book a consultation</a>
-        <a class="c-btn c-btn-line" href="https://ageless.ai/a/transformativewellness/transformation" target="_blank" rel="noopener noreferrer" data-ageless-track data-ageless-position="hero">Preview treatments on your photo</a>
+        <a class="c-btn c-btn-line" href="find-your-treatment.html" data-tw-track="hero_treatment_finder">Find your treatment &middot; 60 seconds</a>
       </div>
-      <p class="c-hero-note">Not sure where to start? <a href="find-your-treatment.html">Take the 60-second treatment finder</a> or call <a href="tel:+18584440414">(858) 444-0414</a></p>
+      <p class="c-hero-note">Prefer to see it first? <a href="https://ageless.ai/a/transformativewellness/transformation" target="_blank" rel="noopener noreferrer" data-ageless-track data-ageless-position="hero">Preview treatments on your photo</a> &middot; or call <a href="tel:+18584440414">(858) 444-0414</a></p>
     </div>
     <figure class="c-hero-img">
       <img src="images/lobby/lobby-hero.webp" alt="Inside the Transformative Wellness studio in Vista, California" width="1200" height="1500" fetchpriority="high">
@@ -619,6 +624,15 @@
       <a class="c-tcard" href="injectables.html"><img src="images/services/injectables.jpg" alt="Botox and dermal filler treatments" loading="lazy" width="360" height="150"><div class="c-tbody"><h3>Botox &amp; Injectables</h3><p>Smooth lines and restore volume: natural, never frozen. First-timers welcome.</p><span>Explore injectables →</span></div></a>
       <a class="c-tcard" href="skin-laser.html"><img src="images/services/laser-treatment.webp" alt="Laser skin treatments" loading="lazy" width="360" height="150"><div class="c-tbody"><h3>Laser &amp; Skin</h3><p>ClearLift, CO2 CoolPeel, IPL, microneedling: matched to your skin and downtime budget.</p><span>Explore laser &amp; skin →</span></div></a>
       <a class="c-tcard" href="body-weight.html"><img src="images/services/weight-loss.jpg" alt="Medical weight loss program" loading="lazy" width="360" height="150"><div class="c-tbody"><h3>Medical Weight Loss</h3><p>Semaglutide &amp; Tirzepatide programs with real check-ins and honest expectations.</p><span>Explore weight loss →</span></div></a>
+    </div>
+
+    <!-- The nine cards previously sat in one undifferentiated grid, giving tattoo
+         removal the same visual weight as injectables. GA4 Jul 8-Aug 4 shows demand is
+         concentrated: Skin & Laser 151 users, Body & Weight 144, Injectables 131 — well
+         ahead of everything below. Leading with those three and demoting the rest cuts
+         the choice-paralysis without hiding anything. -->
+    <h3 class="c-treat-more-head">Also offered</h3>
+    <div class="c-treat-grid c-treat-grid-more">
       <a class="c-tcard" href="body-weight.html"><img src="images/services/skin-care.webp" alt="Body contouring and RF tightening" loading="lazy" width="360" height="150"><div class="c-tbody"><h3>Body Contouring &amp; RF</h3><p>Non-surgical contouring, RF skin tightening, and cellulite smoothing.</p><span>Explore body →</span></div></a>
       <a class="c-tcard" href="lashes-smooth.html"><img src="images/services/laser-hair-removal.jpg" alt="Laser hair removal" loading="lazy" width="360" height="150"><div class="c-tbody"><h3>Laser Hair Removal</h3><p>Lasting smooth skin with series packages tailored to your area and skin type.</p><span>Explore hair removal →</span></div></a>
       <a class="c-tcard" href="iv-therapy.html"><img src="images/services/iv-therapy.jpg" alt="IV vitamin therapy" loading="lazy" width="360" height="150"><div class="c-tbody"><h3>IV Therapy</h3><p>Hydration, vitamin drips, and NAD+ administered by licensed nurses.</p><span>Explore IV therapy →</span></div></a>

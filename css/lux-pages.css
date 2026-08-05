@@ -66,6 +66,14 @@
 .c-tbody span{font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--c-maroon);margin-top:4px}
 .c-tcard:hover .c-tbody span{color:var(--c-maroon-deep)}
 
+/* "Also offered" — secondary treatments below the three that carry the demand.
+   Smaller cards and quieter copy so the top row reads as the actual starting point. */
+.c-treat-more-head{margin:72px 0 32px;font-family:'Oswald',sans-serif;text-transform:uppercase;font-weight:500;font-size:.72rem;letter-spacing:.22em;color:var(--c-mute);padding-top:28px;border-top:1px solid var(--c-line)}
+.c-treat-grid-more{gap:40px 32px}
+.c-treat-grid-more .c-tbody{padding-top:16px;gap:6px}
+.c-treat-grid-more .c-tbody h3{font-size:.94rem}
+.c-treat-grid-more .c-tbody p{font-size:.84rem}
+
 /* method band: black, editorial */
 .c-method{background:var(--c-black);color:#EFEAE2;padding:130px 0}
 .c-method .c-tag{color:#9C948A}
