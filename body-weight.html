@@ -228,7 +228,16 @@
         <div class="container">
             <div class="ageless-service-cta">
                 <p class="ageless-service-q">Wondering if this treatment is right for you?</p>
-                <a href="https://ageless.ai/a/transformativewellness/transformation" class="ageless-service-btn" target="_blank" rel="noopener noreferrer">Take the Free AI Assessment</a>
+                <!-- Ageless "See Your Results" scan, inline.
+                     Replaces a button that sent visitors to ageless.ai. GA4 Jul 8-Aug 4:
+                     1,437 homepage users, 246 reached any service page. Every Ageless
+                     touchpoint was an exit; this one keeps them here. The loader handles
+                     camera permissions, so do not hand-roll this as a bare iframe. -->
+                <ageless-embed-launcher
+                  data-ageless-url="https://www.ageless.ai/embed/platforms/bc43c1e2-eb95-4426-b2c8-50e93898138d/a/transformativewellness/transformation?utm_source=website_embed&amp;utm_medium=embed"
+                  data-ageless-mode="dedicated"
+                  style="display:block;width:100%;"
+                ></ageless-embed-launcher>
                 <p class="ageless-service-note">See personalized recommendations in minutes · $50 consultations, credited toward treatment · Vista, CA only</p>
             </div>
         </div>
@@ -628,5 +637,6 @@
 
     <script src="js/ageless.js" defer></script>
     <script src="js/main.js"></script>
+    <script async src="https://www.ageless.ai/embed/v1/loader.js"></script>
 </body>
 </html>
