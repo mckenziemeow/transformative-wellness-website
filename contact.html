@@ -211,7 +211,7 @@
                          The GHL hook URL is deliberately kept out of page source: when it
                          was here, bots POSTed to it directly and never loaded this page,
                          so no client-side check could stop them. See worker/src/index.js. -->
-                    <form class="contact-form" id="contact-form" action="https://api.leadconnectorhq.com/hooks/pit-2294e821-a3c5-4986-a4c9-92db5d3b5454" method="POST">
+                    <form class="contact-form" id="contact-form" action="/api/contact" method="POST">
                         <!-- GHL Tracking -->
                         <input type="hidden" name="source" value="Website Contact Form">
                         <input type="hidden" name="page_url" value="https://transformativemedspa.com/contact.html">
@@ -261,12 +261,9 @@
                             <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
                         </div>
 
-                        <!-- TURNSTILE — commented out until the Worker is deployed and
-                             /api/contact is routed. To go live: paste the real site key,
-                             uncomment this, and change the form action above to
-                             "/api/contact". See worker/README-DEPLOY.md.
-                        <div class="cf-turnstile" data-sitekey="TURNSTILE_SITE_KEY_HERE" data-theme="light" style="margin-bottom: var(--spacing-md);"></div>
-                        -->
+                        <!-- Turnstile. Site key is public by design; the secret lives only
+                             as a Worker secret on tw-contact-proxy. -->
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAEGi3o7H9P1pWAYa" data-theme="light" style="margin-bottom: var(--spacing-md);"></div>
 
                         <p id="form-error" role="alert" style="display:none; color:#b3261e; font-size:0.9rem; margin-bottom:var(--spacing-sm);"></p>
 
@@ -439,9 +436,7 @@
     <script src="js/ageless.js" defer></script>
     <script src="js/main.js"></script>
 
-    <!-- Turnstile script: uncomment together with the widget div above.
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    -->
     <script>
     // Submits via fetch so visitors stay on the site, instead of the native POST that
     // navigated the browser away to a raw GoHighLevel API response — which is why the
