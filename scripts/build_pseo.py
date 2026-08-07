@@ -492,7 +492,7 @@ def render_page(service: dict, city: dict) -> str:
     meta_desc = (
         f"{service['name']} for {city['name']} residents at Transformative Wellness — "
         f"{city['drive_distance']} from {city['name']} ({city['drive_min']}-min drive). "
-        f"Board-certified care, free consultations. Call {PHONE}."
+        f"Board-certified care. $50 consultations, credited toward treatment. Call {PHONE}."
     )
     h1 = service["h1_phrase"].format(city=city["name"])
 
@@ -644,7 +644,7 @@ def render_page(service: dict, city: dict) -> str:
                         <dt style="font-weight: 600; margin-top: var(--spacing-sm);">Good candidate</dt>
                         <dd style="margin: 0;">{html_escape(service["good_candidate"])}</dd>
                     </dl>
-                    <a href="{BOOK_URL}" class="btn btn-primary" style="display: block; text-align: center; margin-top: var(--spacing-lg);">Book Free Consultation</a>
+                    <a href="{BOOK_URL}" class="btn btn-primary" style="display: block; text-align: center; margin-top: var(--spacing-lg);">Book Consultation</a>
                 </aside>
             </div>
         </div>
@@ -704,9 +704,9 @@ def render_page(service: dict, city: dict) -> str:
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to book {html_escape(service["name"])} from {html_escape(city["name"])}?</h2>
-                <p>Free consultations. Same-week appointments. Talk to a real provider before you commit.</p>
+                <p>$50 consultations, credited toward treatment. Same-week appointments. Talk to a real provider before you commit.</p>
                 <div class="cta-buttons">
-                    <a href="{BOOK_URL}" class="btn btn-primary btn-large">Book Free Consultation</a>
+                    <a href="{BOOK_URL}" class="btn btn-primary btn-large">Book Consultation</a>
                     <a href="tel:{PHONE_E164}" class="btn btn-outline btn-large"><i class="fas fa-phone"></i> {PHONE}</a>
                 </div>
             </div>
