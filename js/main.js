@@ -315,6 +315,13 @@ document.querySelectorAll('.btn').forEach(button => {
     
     // Check if user has already made a choice
     const cookieConsent = localStorage.getItem('cookieConsent');
+    function grantTracking() {
+        if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', { 'analytics_storage': 'granted', 'ad_storage': 'granted', 'ad_user_data': 'granted', 'ad_personalization': 'granted' });
+        }
+        if (typeof fbq !== 'undefined') { fbq('consent', 'grant'); }
+    }
+    if (cookieConsent === 'accepted') { grantTracking(); }
     
     if (!cookieConsent && cookieBanner) {
         // Show banner after a short delay
@@ -329,12 +336,8 @@ document.querySelectorAll('.btn').forEach(button => {
             localStorage.setItem('cookieConsentDate', new Date().toISOString());
             cookieBanner.classList.remove('active');
             
-            // Enable Google Analytics
-            if (typeof gtag !== 'undefined') {
-                gtag('consent', 'update', {
-                    'analytics_storage': 'granted'
-                });
-            }
+            // Enable analytics and the Meta pixel only now
+            grantTracking();
         });
     }
     

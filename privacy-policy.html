@@ -19,6 +19,7 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {'analytics_storage': 'denied', 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied'});
         gtag('js', new Date());
         gtag('config', 'G-12N8MNT8PX');
     </script>
@@ -43,6 +44,7 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('consent', 'revoke');
   fbq('init', '763444198971977');
   fbq('track', 'PageView');
   </script>
@@ -194,6 +196,7 @@
 
                 <div class="legal-section">
                     <h2>Your HIPAA Rights</h2>
+                    <p>This Notice of Privacy Practices is effective as of October 20, 2026.</p>
                     <p>Under HIPAA, you have the following rights regarding your protected health information:</p>
                     
                     <h3>Right to Access</h3>
@@ -232,7 +235,11 @@
                     <ul>
                         <li><strong>Online Scheduling:</strong> MyPatientVisit for appointment booking</li>
                         <li><strong>Payment Processing:</strong> Secure payment processors</li>
-                        <li><strong>Analytics:</strong> Google Analytics for website improvement</li>
+                        <li><strong>Analytics and advertising:</strong> Google Analytics 4 and Google Tag Manager (site usage), and the Meta (Facebook) Pixel (advertising measurement). These load only after you accept cookies on our banner.</li>
+                        <li><strong>Chat, forms, and text messages:</strong> GoHighLevel (LeadConnector) powers our chat widget, contact form, and appointment reminders by text; it receives the name, email, phone number, and message you provide.</li>
+                        <li><strong>Skin analysis:</strong> Ageless.ai provides the optional on-page skin scan; it processes the photo and goals you choose to submit.</li>
+                        <li><strong>Scheduling and memberships:</strong> MyPatientVisit (appointments) and RepeatMD (memberships and rewards) receive the details you enter on their pages.</li>
+                        <li><strong>Hosting and bot protection:</strong> Cloudflare (Pages, Turnstile on the contact form).</li>
                     </ul>
                     <p>These services have their own privacy policies and are bound by HIPAA Business Associate Agreements where applicable.</p>
                 </div>
@@ -356,7 +363,7 @@
                 <div class="footer-legal">
                     <a href="/privacy-policy">Privacy</a>
                     <a href="/terms-of-service">Terms</a>
-                    <a href="/medical-disclaimer">HIPAA</a>
+                    <a href="/privacy-policy">HIPAA</a>
                     <a href="/accessibility">Accessibility</a>
                 </div>
             </div>
