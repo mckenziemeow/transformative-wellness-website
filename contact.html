@@ -33,6 +33,7 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {'analytics_storage': 'denied', 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied'});
         gtag('js', new Date());
         gtag('config', 'G-12N8MNT8PX');
     </script>
@@ -57,6 +58,7 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('consent', 'revoke');
   fbq('init', '763444198971977');
   fbq('track', 'PageView');
   </script>
@@ -236,6 +238,7 @@
                         <div class="form-group">
                             <label for="phone">Phone *</label>
                             <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required>
+                            <p class="consent-note" style="font-size:0.8rem;color:var(--color-text-muted);margin-top:0.4rem;">By providing your number you agree to receive calls and text messages from Transformative Wellness about your request. Message and data rates may apply. Reply STOP to opt out.</p>
                         </div>
                         <div class="form-group">
                             <label for="service">Service Interest</label>
@@ -402,7 +405,7 @@
                 <div class="footer-legal">
                     <a href="/privacy-policy">Privacy</a>
                     <a href="/terms-of-service">Terms</a>
-                    <a href="/medical-disclaimer">HIPAA</a>
+                    <a href="/privacy-policy">HIPAA</a>
                     <a href="/accessibility">Accessibility</a>
                 </div>
             </div>
